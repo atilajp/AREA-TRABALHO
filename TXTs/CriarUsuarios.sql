@@ -1,0 +1,4 @@
+--CREATE LOGIN wmsexpert WITH PASSWORD = 'Wms@46035'
+--CREATE USER wmsexpert for login wmsexpert
+--GRANT SELECT ON EXPERT_PRODUTO TO wmsexpert
+--GRANT exec ON sp_RetornoExpPedido TO wmsexpert

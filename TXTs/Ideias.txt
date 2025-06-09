@@ -1,0 +1,4 @@
+Gestor de Preços. Lançar com Margen negativa para dininuir o Valor do produto.
+Controle de numeração do nfce no PDV. Local para registrar numeros para não contabilizar. +Engajamento#25
+Na cotação ao abrir a sugestão de compras e imprimir solicita o ida da Cotação que nao foi carregada apartir do painel. Client Exemplo suframed.
+ 

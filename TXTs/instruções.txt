@@ -1,0 +1,285 @@
+Do While Not .EOF
+		'Instrução
+	.MoveNext
+Loop
+#############################################
+
+	With CurrentDb.QueryDefs("")
+
+		.Parameters.Item("@Cod").value = Cod
+		.Execute
+			
+	End With
+#############################################
+
+
+    With CurrentDb.QueryDefs(strSql)
+
+        .Parameters("@PesqProduto") = Me.pesqProduto
+        Set rsProdutos = .OpenRecordset(dbOpenSnapshot, dbSeeChanges)
+
+    End With
+
+
+#############################################
+
+With CurrentDb().OpenRecordset("", dbOpenDynaset, dbSeeChanges)
+	If Not .EOF Then
+		'Instrução
+	End If
+End With
+
+#############################################
+at	
+    For i = 0 To 6
+        ' Faça alguma coisa dentro do loop
+        Debug.Print "Valor de i: " & i
+    Next i
+
+
+##############################################
+With CurrentDb().OpenRecordset("", dbOpenDynaset, dbSeeChanges)
+Do While Not .EOF
+		'Instrução
+	.MoveNext
+Loop
+End With
+#############################################
+
+If true Then
+	'Instrução
+	Cancel = 1
+	Me.Undo
+	DoCmd.CancelEvent
+	Exit Sub
+End If
+
+##############################################
+
+
+    If Util_getPermissao("AssistenciaAlterarEtapa") = 0 Then
+        Util_MsgBox "Usuário sem acesso de Alteração!", vbExclamation
+        Cancel = 1
+        Me.Undo
+        Exit Sub
+    End If
+
+
+##############################################
+On Error GoTo Error
+
+
+Sair:
+Exit Function
+
+Error:
+    Util_MsgBox "Erro no método ConciliadorCartoes_setConciliacaoAutomatico(): " & Err.Description, vbCritical
+GoTo Sair
+
+###############################################
+
+If ((GetKeyState(vbKeyBack) And &H8000) = &H8000) Or ((GetKeyState(vbKeyDown) And &H8000) = &H8000) Or ((GetKeyState(vbKeyUp) And &H8000) = &H8000) Then
+	Exit Function
+End If
+
+
+
+
+Dim str_Cabecalho As String
+Dim Registro_NFE_Cabecalho as 
+str_Cabecalho = CurrentDb.QueryDefs("Cargas_Gerar_001_Cabecalho_NFE").sql
+		'Sublistituir Parametros
+str_Cabecalho = Replace(str_Cabecalho, "[@RegistroCarga]", RegistroCarga)
+str_Cabecalho = Replace(str_Cabecalho, "[@Loja]", "'" & rst.Fields("LojaOrigem") & "'")
+str_Cabecalho = Replace(str_Cabecalho, "[@Usuario]", "'" & Forms!entradaatendente!usuario & "'")
+'Debug.Print str_Cabecalho
+With CurrentDb
+	.Execute str_Cabecalho, dbFailOnError
+Registro_NFE_Cabecalho = .OpenRecordset("Select @@Identity")(0)
+End With
+
+
+Private Sub ListarReferencias()
+    
+    Dim Item As Reference
+    Dim i As Integer
+    
+    On Error Resume Next
+    
+    For Each Item In References
+        i = i + 1
+        Debug.Print "Nome: " & References.Item(i).Name
+        Debug.Print "Pasta: " & References.Item(i).FullPath
+        Debug.Print "Guid: " & References.Item(i).GUID
+        Debug.Print "Kind: " & References.Item(i).Kind
+        Debug.Print "Major: " & References.Item(i).Major
+        Debug.Print "Minor: " & References.Item(i).Minor
+    Next Item
+
+End Sub
+
+
+Public Function DelVinc()
+Dim tdf As TableDef
+Dim tableName As String
+Dim db As Database
+Set db = CurrentDb
+    For Each tdf In db.TableDefs
+        tableName = tdf.Name
+        ' Verifique se o nome da tabela termina com "_Vinc_"
+        If Right(tableName, 6) = "_Vinc_" Then
+            ' Se termina com "_Vinc_", exclua a tabela
+            db.Execute "DROP TABLE [" & tableName & "]"
+        End If
+    Next tdf
+End Function
+
+
+
+
+
+Sub RemoverPrefixoDBO()
+    Dim db As DAO.Database
+    Dim tdf As DAO.TableDef
+    Dim nomeOriginal As String
+    Dim nomeNovo As String
+    Set db = CurrentDb
+
+    ' Percorre todas as tabelas no banco de dados
+    For Each tdf In db.TableDefs
+        nomeOriginal = tdf.Name
+
+        ' Verifica se o nome da tabela começa com 'dbo_'
+        If Left(nomeOriginal, 4) = "dbo_" Then
+            ' Remove o prefixo 'dbo_' do nome da tabela
+            nomeNovo = Mid(nomeOriginal, 5)
+
+            ' Renomeia a tabela
+            tdf.Name = nomeNovo
+        End If
+    Next tdf
+
+    MsgBox "Prefixo 'dbo_' removido de todas as tabelas.", vbInformation
+End Sub
+
+##########################################
+
+With CurrentDb.OpenRecordset("", dbOpenDynaset, dbSeeChanges)
+
+	Do While Not .EOF
+		.Edit
+		.Fields("xxx") = "XXX"
+		.Update
+		.MoveNext
+	Loop
+
+End With
+
+If (Util_getSenhaSupervisor <> YES_RETURN) Then
+
+	MsgBox "Operacao cancelada ou senha inválida.", vbExclamation, "Aviso"
+	Me.ParceladorCondicao.Undo
+	Cancel = 1
+	Exit Sub
+
+End If
+
+
+ImpressoesModelos_OpenForm("PEDIDO")
+
+Private Sub Quantidade_BeforeUpdate(Cancel As Integer)
+    Dim quantNoEstoque As Double
+    quantNoEstoque = Nz(DLookup("Estoque", "[Cadastro de mercadoriasLojas]", "[Código da Mercadoria]=" & Nz(Me.[Código da Venda], 0)), 0)
+    
+    Dim quantItem As Double
+    quantItem = Me.Quantidade
+
+    If quantItem > quantNoEstoque Then
+         GoTo verificarSenhaSupervisor
+    End If
+
+Validado:
+    Exit Sub
+
+verificarSenhaSupervisor:
+    If Util_getSenhaSupervisor() = YES_RETURN Then
+        GoTo Validado
+    End If
+    
+    MsgBox "Senha Inválida!", vbExclamation, getNomeApp & " - Avisa"
+    
+    Exit Sub
+End Sub
+
+'########################################################################
+Public Function NomeFuncao(IdApontamento As Long)
+On Error GoTo ERRO
+
+    With CurrentDb.OpenRecordset("", dbOpenDynaset, dbSeeChanges)
+
+        Do While Not .EOF
+            .Edit
+            .Fields("xxx") = "XXX"
+            .Update
+            .MoveNext
+        Loop
+
+    End With
+
+Sair:
+Exit Function
+ERRO:
+    MsgBox Err.Description, vbInformation, "Suporte - Avisa"
+End Function	
+
+
+##########################################################################
+
+   Dim IdCheklist As Long
+   Dim Str As String
+   Str = "INSERT INTO [Checklist_Cabecalho]([IDAssistencia],[Data_Lancamento],[IDUsuario],[LojaOrigem]) VALUES(" & Me.Registro & ",'" & Date & "'," & getUsuarioLogadoID() & ",'" & Me.LojaOrigem & "')"
+   IdCheklist = Util_setRegistro_getLastID(Str)
+   
+   
+   
+   
+   
+   Private Sub Exportar_Excel()
+Dim FS As Object
+    Set FS = CreateObject("Scripting.FileSystemObject")
+    
+    'Verificando se o arquivoja existee deleta
+    If FS.FileExists(Me.TxPasta) Then
+        FS.DeleteFile (Me.TxPasta)
+    End If
+                        
+    DoCmd.TransferSpreadsheet acExport, 8, "Cadastro de Mercadorias Memoria_Exportar", Me.TxPasta, True, ""
+    MsgBox "Arquivo exportado com sucesso em " & Me.TxPasta, vbInformation, "Aviso"
+End Sub
+
+
+
+##########################################################################
+Dim idItem As Long
+Dim StrSql As String
+Dim Quantidade As Integer
+
+Quantidade = IIf(Form_PesquisaPreco.MercadoriaQuantidade = 0, 1, Form_PesquisaPreco.MercadoriaQuantidade)
+
+StrSql = "INSERT INTO ProdOrç (" & _
+		 "[Código da Venda], [Código da Mercadoria], Quantidade, V_Peca, Preço, PrecoBruto, Descriçãos, Produto_Referencia, Unidade, TemPromocao, TipoGrupo, TipoPrecoItem, V_Alt, V_Larg, V_Comp, V_Preço) " & _
+		 "VALUES (" & _
+		 [Forms]![Orçamento]![Registro] & ", " & _
+		 IDMercadoria & ", " & _
+		 Quantidade & ", " & _
+		 Quantidade & ", " & _
+		 Replace(Nz([Forms]![Orçamento]![TipoPrecoOrcamento], "PADRAO"), "'", "''") & "', " & _
+		 Replace(rstMercadoria("V_Alt"), ",", ".") & ", " & _
+		 Replace(rstMercadoria("V_Larg"), ",", ".") & ", " & _
+		 Replace(rstMercadoria("V_Comp"), ",", ".") & ", " & _
+		 Replace(rstMercadoria("Preco"), ",", ".") & ")"
+
+With CurrentProject.Connection
+	.Execute StrSql, , adCmdText + adExecuteNoRecords
+	idItem = .Execute("SELECT @@IDENTITY")(0)
+End With

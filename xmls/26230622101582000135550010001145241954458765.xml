@@ -1,0 +1,225 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe26230622101582000135550010001145241954458765" versao="4.00">
+      <ide>
+        <cUF>26</cUF>
+        <cNF>95445876</cNF>
+        <natOp>RETORNO GARANTIA</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>114524</nNF>
+        <dhEmi>2023-06-07T14:22:00-03:00</dhEmi>
+        <dhSaiEnt>2023-06-07T14:22:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>2602902</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>5</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <indIntermed>0</indIntermed>
+        <procEmi>0</procEmi>
+        <verProc>12.1.033 | 3.0</verProc>
+        <NFref>
+          <refNFe>25230309318691000140550010001968151749316982</refNFe>
+        </NFref>
+      </ide>
+      <emit>
+        <CNPJ>22101582000135</CNPJ>
+        <xNome>W.NORDESTE COMERCIO PECAS E ACESSORIOS DE MOTOS E BICICLETAS</xNome>
+        <xFant>W.NORDESTE</xFant>
+        <enderEmit>
+          <xLgr>Rodovia BR101 Sul 2220 Galpao03</xLgr>
+          <nro>SN</nro>
+          <xCpl>Cond.Lg. Cone Plug Play 2</xCpl>
+          <xBairro>Dis Ind STO Estevao</xBairro>
+          <cMun>2602902</cMun>
+          <xMun>Cabo de Santo Agostinho</xMun>
+          <UF>PE</UF>
+          <CEP>54503010</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8133346200</fone>
+        </enderEmit>
+        <IE>080443338</IE>
+        <IM>0312045</IM>
+        <CNAE>4530702</CNAE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>09318691000140</CNPJ>
+        <xNome>FALCAO DISTRIBUICAO E IMPORTACAO DE MOTOS E PECAS AUTO PECAS</xNome>
+        <enderDest>
+          <xLgr>RUA MANOEL FRANCISCO VENANCIO, SN</xLgr>
+          <nro>SN</nro>
+          <xBairro>CENTRO</xBairro>
+          <cMun>2501807</cMun>
+          <xMun>BAYEUX</xMun>
+          <UF>PB</UF>
+          <CEP>58306130</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8332323282</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>161551980</IE>
+        <email>felipelucena_@hotmail.com;xml@guanabaraexpress.com.br</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>013898</cProd>
+          <cEAN>7899651828223</cEAN>
+          <xProd>REFIL BOMBA COMBUSTIVEL TITAN150 2009-10 GASOLINA Ref: 10720007 Marca: SCUD</xProd>
+          <NCM>84139190</NCM>
+          <CEST>0103500</CEST>
+          <cBenef />
+          <CFOP>6949</CFOP>
+          <uCom>UN</uCom>
+          <qCom>1.0000</qCom>
+          <vUnCom>71.60000000</vUnCom>
+          <vProd>71.60</vProd>
+          <cEANTrib>7899651828223</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>1.0000</qTrib>
+          <vUnTrib>71.60000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS90>
+              <orig>2</orig>
+              <CST>90</CST>
+              <modBC>3</modBC>
+              <vBC>0</vBC>
+              <pRedBC>0.0000</pRedBC>
+              <pICMS>0</pICMS>
+              <vICMS>0</vICMS>
+            </ICMS90>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>0</vBC>
+              <pIPI>0</pIPI>
+              <vIPI>0</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pPIS>0</pPIS>
+              <vPIS>0</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pCOFINS>0</pCOFINS>
+              <vCOFINS>0</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+        <infAdProd>Ref: 10720007</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>0</vBC>
+          <vICMS>0</vICMS>
+          <vICMSDeson>0</vICMSDeson>
+          <vFCPUFDest>0</vFCPUFDest>
+          <vICMSUFDest>0</vICMSUFDest>
+          <vICMSUFRemet>0</vICMSUFRemet>
+          <vFCP>0</vFCP>
+          <vBCST>0</vBCST>
+          <vST>0</vST>
+          <vFCPST>0</vFCPST>
+          <vFCPSTRet>0</vFCPSTRet>
+          <vProd>71.60</vProd>
+          <vFrete>0</vFrete>
+          <vSeg>0</vSeg>
+          <vDesc>0</vDesc>
+          <vII>0</vII>
+          <vIPI>0</vIPI>
+          <vIPIDevol>0</vIPIDevol>
+          <vPIS>0</vPIS>
+          <vCOFINS>0</vCOFINS>
+          <vOutro>0</vOutro>
+          <vNF>71.60</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>0</modFrete>
+        <transporta>
+          <CNPJ>08707061000952</CNPJ>
+          <xNome>GUANABARA EXPRESS TRANSP DE CARGAS LTDA</xNome>
+          <IE>035657189</IE>
+          <xEnder>R REPUBLICA ESLOVACA 1271 GALPAO B4</xEnder>
+          <xMun>JABOATAO DOS GU</xMun>
+          <UF>PE</UF>
+        </transporta>
+        <vol>
+          <qVol>1</qVol>
+          <esp>VOL</esp>
+          <pesoL>0.180</pesoL>
+          <pesoB>0.210</pesoB>
+        </vol>
+      </transp>
+      <pag>
+        <detPag>
+          <indPag>0</indPag>
+          <tPag>99</tPag>
+          <xPag>Negociacao Futura</xPag>
+          <vPag>71.60</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>GARANTIA APROVADA</infAdFisco>
+        <infCpl>SAC 40480 NOTA FISCAL 196815    Qtd Produto: 1,00 Qtd Item: 1  Num Pedido: 227167 Cond Pgto: OUTRAS OP.  Cod Representante: 999999 Cod. ANTT:    RESSALVAMOS QUE OS PRAZOS PARA RECLAMA  ES S O:  * AVARIAS: 2 DIAS  * DIVERGENCIAS OU TROCA DE ITENS: 5 DIAS  * DIVERGENCIA QUANTO AO NUMERO DE VOLUMES: FAZER RESSALVA NO CONHECIMENTO DE TRANSPORTE NO ATO DO RECEBIMENTO  Fique atento: LM n o envia boletos por e-mail. Para sua seguran a acesse o portal para emiss o de segunda via portal.lmbike.com.br ou portal.lmmoto.com.br Emissao Original NF-e: 1   000196815 23-03-2023</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>53113791000122</CNPJ>
+        <xContato>Rodrigo de Almeida Sartorio</xContato>
+        <email>resp_tecnico_dfe_protheus@totvs.com.br</email>
+        <fone>1128593904</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe26230622101582000135550010001145241954458765">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>YGTHo5oR4wz9YCwu5cuQekeglzc=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>fB9kvmUUV1M5G+wJwFF9RULIkO2lP1dHHDVmSQ1yxxSlLfl9RYmLQooZFzjwb3nLJOJvaVlZEnRuLCBa/Pfgm0dCZx16zBjtRMqhYPUZUaTm73bzwdVHo7NCl8WY1Ac/bL8nf9qIDY5RZ9qWIjIpcgp2QnhQqXC5vjELLEI5gtvTR17ynBB6F5LxpLADBe3m31EEa32BJ8XAuQh5g0w1shjbR6swTBc/2HYxXlShCK9aDIa8yb+hKqnAPYxycZerdEdgbOXu4UU6vFG9+j7Q1P/yifTk17dbGiuDmz2GSY8PgLdywKrG7NWKS00A0LMbgwUKokNr9hP93dbFfcYmlQ==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00">
+    <infProt Id="NFe126230049434783">
+      <tpAmb>1</tpAmb>
+      <verAplic>NFEPE_P_1.40.2</verAplic>
+      <chNFe>26230622101582000135550010001145241954458765</chNFe>
+      <dhRecbto>2023-06-07T14:34:08-03:00</dhRecbto>
+      <nProt>126230049434783</nProt>
+      <digVal>YGTHo5oR4wz9YCwu5cuQekeglzc=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

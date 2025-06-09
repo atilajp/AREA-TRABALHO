@@ -1,0 +1,25 @@
+USE [master]
+GO
+-- Método 1:
+EXEC sp_attach_single_file_db @dbname= TestDb,
+@physname=N'E:\Data1\TestDb.mdf'
+GO
+
+
+
+
+-- Método 2:
+CREATE DATABASE TestDb ON
+(FILENAME = N'E:\Data1\TestDb.mdf')
+FOR ATTACH_REBUILD_LOG
+GO
+
+
+
+
+
+-- Método 3:
+CREATE DATABASE TestDb ON
+(FILENAME =N'E:\Data1\TestDb.mdf')
+
+

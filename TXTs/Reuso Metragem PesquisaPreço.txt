@@ -1,0 +1,387 @@
+#################by Átila Felipe
+
+#################Subistituir  Função no Modulo Cliente_Metragem
+Public Function setValorMetragemPadrao(cItem As Long)
+    Dim origemTela As String, OrigemTelaSub As String
+    Dim strSQLItens As String
+    Dim rsItens As RecordSet
+    Dim CodigoItem As Long
+
+    On Error GoTo ex
+    
+    DoCmd.RunCommand acCmdSaveRecord
+    
+    origemTela = Screen.ActiveForm.Name
+    
+    If origemTela = "Vendas3" Then
+    
+        OrigemTelaSub = "subformulário vendas2"
+        
+        CodigoItem = IIf(cItem = 0, Forms(origemTela).Controls(OrigemTelaSub).Form.Controls("cItem"), cItem)
+        
+        strSQLItens = "SELECT * FROM [Vendas Efetuadas] WHERE [contar]= " & CodigoItem
+        Set rsItens = CurrentDb.OpenRecordset(strSQLItens, dbOpenDynaset, dbSeeChanges)
+        
+        If Not rsItens.EOF Then
+           With CurrentDb.OpenRecordset("SELECT * FROM [Cadastro de Mercadorias] WHERE [Código da Mercadoria] = " & rsItens.Fields("Código da Mercadoria"), dbOpenSnapshot, dbSeeChanges)
+              
+              If Not .EOF Then
+                   If .Fields("ValorMetragem") = 0 Then
+                       Forms(origemTela).Controls(OrigemTelaSub).Form.Controls("metragem") = 1
+                       Forms(origemTela).Controls(OrigemTelaSub).Form.Controls("metragem").Requery
+                       GoTo finalizar
+                   Else
+                       'Forms![Vendas3]![subformulário vendas2].Form![Metragem].Enabled = True
+                       Forms![Vendas3]![subformulário vendas2].Form![Metragem] = .Fields("ValorMetragem")
+                       Forms![Vendas3]![subformulário vendas2].Form![Quantidade] = Nz(.Fields("ValorMetragem"), 1)
+                       Forms![Vendas3]![subformulário vendas2].Form![Metragem].Requery
+                       Forms![Vendas3]![subformulário vendas2].Form![Quantidade].Requery
+                       GoTo finalizar
+                   End If
+              End If
+           End With
+        End If
+        
+     End If
+     
+     If origemTela = "Orçamento" Then
+    
+        OrigemTelaSub = "subformulário orçamento"
+        CodigoItem = IIf(cItem = 0, Forms(origemTela).Controls(OrigemTelaSub).Form.Controls("cItem"), cItem)
+        
+        strSQLItens = "SELECT * FROM [ProdOrç] WHERE [OrdemSub]= " & CodigoItem
+        Set rsItens = CurrentDb.OpenRecordset(strSQLItens, dbOpenDynaset, dbSeeChanges)
+        
+        If Not rsItens.EOF Then
+           With CurrentDb.OpenRecordset("SELECT * FROM [Cadastro de Mercadorias] WHERE [Código da Mercadoria] = " & rsItens.Fields("Código da Mercadoria"), dbOpenSnapshot, dbSeeChanges)
+              
+              If Not .EOF Then
+                   If .Fields("ValorMetragem") = 0 Then
+                       Forms(origemTela).Controls(OrigemTelaSub).Form.Controls("metragem") = 1
+                       Forms(origemTela).Controls(OrigemTelaSub).Form.Controls("metragem").Requery
+                       GoTo finalizar
+                   Else
+                       'Forms![Vendas3]![subformulário vendas2].Form![Metragem].Enabled = True
+                       Forms![Orçamento]![subformulário orçamento].Form![Metragem] = .Fields("ValorMetragem")
+                       Forms![Orçamento]![subformulário orçamento].Form![Quantidade] = Nz(.Fields("ValorMetragem"), 1)
+                       Forms![Orçamento]![subformulário orçamento].Form![Metragem].Requery
+                       Forms![Orçamento]![subformulário orçamento].Form![Quantidade].Requery
+                       GoTo finalizar
+                   End If
+              End If
+           End With
+        End If
+        
+     End If
+     
+     
+finalizar:
+     rsItens.Close
+     Set rsItens = Nothing
+     Exit Function
+     
+ex:
+     MsgBox "Erro na Funcção setValorMetragemPadrao(): " & Err.description, vbCritical, "Aviso"
+      
+End Function
+
+
+
+
+
+####################Subistituir  Função no Modulo PesquisaPreco
+
+Public Function PesquisaPreco_AdicionarItem(ByVal myListView As Object) As Boolean
+
+    On Error GoTo ex
+
+    Dim IDMercadoria As Variant
+
+    IDMercadoria = PesquisaPreco_ListViewGetColumn(myListView, 1)
+    
+    If (PesquisaPreco_DestinoItem = "Vendas3") Or (PesquisaPreco_DestinoItem = "Vendas_Prevenda_Rapida") Then
+        
+        Dim rsPedidoTemp As RecordSet
+        
+        Set rsPedidoTemp = CurrentDb.OpenRecordset("SELECT * FROM [Cadastro de Vendas] WHERE [Código da Venda] = GetPedidoSelecionado()", dbOpenSnapshot, dbSeeChanges)
+        
+        If rsPedidoTemp.EOF Then
+            If PesquisaPreco_DestinoItem = "Vendas_Prevenda_Rapida" Then
+                
+                Dim frmPrevendaRapida As Form
+                Set frmPrevendaRapida = Forms("Vendas_Prevenda_Rapida")
+                
+                frmPrevendaRapida.Controls("LojaOrigem") = getLoja_EmpresaLogada
+                frmPrevendaRapida.SetFocus
+                Util_SalvarRegistro
+                frmPrevendaRapida.Controls("txtNumeroPedido") = Format(frmPrevendaRapida.Controls("txtCodigoVenda"), "0000000")
+                PedidoSelecionado = frmPrevendaRapida.Controls("txtCodigoVenda")
+                frmPrevendaRapida.Requery
+                Set rsPedidoTemp = CurrentDb.OpenRecordset("SELECT * FROM [Cadastro de Vendas] WHERE [Código da Venda] = GetPedidoSelecionado()", dbOpenSnapshot, dbSeeChanges)
+                
+            Else
+                Util_MsgBox "Venda não iniciada ou não selecionada.", vbExclamation
+                PesquisaPreco_AdicionarItem = True
+                Exit Function
+            End If
+        End If
+        
+        Dim frmVendasCurrent As Form
+        Set frmVendasCurrent = Vendas_GetFormCurrent(PesquisaPreco_DestinoItem)
+        
+        If frmVendasCurrent Is Nothing Then
+            Util_MsgBox "Tela de Pré-venda não carregada.", vbExclamation
+            Exit Function
+        End If
+        
+        'verificando a edicao da tela -------
+        If Not (frmVendasCurrent.AllowEdits) Then
+            Util_MsgBox "Venda não está em modo de edição." & _
+                        "Antes de incluir um item clique em Alterar na tela de vendas.", vbExclamation
+            Exit Function
+        End If
+        '-------------------------------------
+
+        If Not PesquisaPreco_getEstoqueLiberado(IDMercadoria, 1) Then
+            Util_MsgBox "Mercadoria sem Estoque Disponível.", vbExclamation
+            Exit Function
+        End If
+        
+        If rsPedidoTemp.Fields("Cancelado") Or (rsPedidoTemp.Fields("TEFCV") > 0) Then
+            Util_MsgBox "Venda já faturada ou cancelada.", vbExclamation
+            Exit Function
+        End If
+
+        If (PesquisaPreco_ExisteItem(IDMercadoria)) Then
+            MsgBox "Venda já contém o item selecionado.", vbExclamation, getNomeApp & " - Avisa"
+            Exit Function
+        Else
+            PesquisaPreco_AddItem IDMercadoria
+            
+            Select Case True
+                Case frmVendasCurrent.Name = "Vendas3"
+                    Forms!Vendas3![subformulário vendas2].Form.Requery
+
+                    If Not PesquisaPreco_getIniciarNovaPesquisa Then
+                        DoCmd.OpenForm "Vendas3"
+                        Forms!Vendas3![subformulário vendas2].SetFocus
+                        DoCmd.GoToRecord , , acLast
+                        Promocoes_setValorPromocao
+                        Forms!Vendas3!subtotal.Requery
+                        Forms!Vendas3!tot.Requery
+                        DoCmd.Close acForm, "PesquisaPreco", acSaveYes
+                        Forms(PesquisaPreco_DestinoItem).SetFocus
+                        'Adicionar Chamada da função metragem Aqui
+                            setValorMetragemPadrao (Nz(DMax("contar", "Vendas Efetuadas", "[Código da Venda]=" & GetPedidoSelecionado()), 0))
+                        'Fim Adicionar Chamada da função metragem
+                    End If
+                    
+                Case frmVendasCurrent.Name = "Vendas_Prevenda_Rapida"
+                    If Util_FormatVersaoWS(getVersaoApp(), True) >= PreVenda_VersaoMinima Then
+                    
+                        If Not PesquisaPreco_getIniciarNovaPesquisa Then
+                            Prevenda_Rapida_Abrir GetPedidoSelecionado()
+                            DoCmd.Close acForm, "PesquisaPreco", acSaveYes
+                            Forms(PesquisaPreco_DestinoItem).SetFocus
+                        End If
+                        
+                    End If
+              End Select
+        End If
+
+    
+
+    ElseIf (PesquisaPreco_DestinoItem = "Orçamento") Then
+
+        If ([Forms]![Orçamento]![Registro] > 0) Then
+
+            'verificando a edicao da tela -------
+            If Not (Forms![Orçamento].AllowEdits) Then
+                MsgBox "Orçamento não está em modo de edição. O Orçamento selecionado não pode ser alterado.", vbExclamation, getNomeApp & " - Avisa"
+                Exit Function
+            End If
+            '-------------------------------------
+            If (PesquisaPreco_ExisteItem(IDMercadoria)) Then
+                MsgBox "Orçamento já contém o item selecionado.", vbExclamation, getNomeApp & " - Avisa"
+                Exit Function
+            Else
+                PesquisaPreco_AddItem IDMercadoria
+
+                Forms![Orçamento]![subformulário orçamento].Form.Requery
+
+                If Not PesquisaPreco_getIniciarNovaPesquisa Then
+                    DoCmd.OpenForm "Orçamento"
+                    Forms![Orçamento]![subformulário orçamento].SetFocus
+                    DoCmd.GoToRecord , , acLast
+                    Promocoes_setValorPromocao
+                    DoCmd.Close acForm, "PesquisaPreco", acSaveYes
+                    Forms(PesquisaPreco_DestinoItem).SetFocus
+                    'Adicionar Chamada da função metragem Aqui
+                        setValorMetragemPadrao (Nz(DMax("OrdemSub", "ProdOrç", "[Código da Venda]=" & Nz(Form_Orçamento.Registro, 0)), 0))
+                    'Fim Adicionar Chamada da função metragem
+                End If
+            End If
+        Else
+            MsgBox "Orçamento não iniciado ou não selecionado.", vbExclamation, getNomeApp & " - Avisa"
+        End If
+
+    Else
+        MsgBox "Nenhuma tela de destino iniciada.", vbExclamation, getNomeApp & " - Avisa"
+    End If
+
+    PesquisaPreco_AdicionarItem = True
+
+    Exit Function
+ex:
+    MsgBox "Erro no método AdicionarItem: " & Err.description, vbCritical, getNomeApp & " - Avisa"
+
+End Function
+				
+
+####################Subistituir  Sub no Modulo PesquisaPreco
+
+Private Sub PesquisaPreco_AddItem_PADRAO(ByVal IDMercadoria As Long)
+    
+    On Error GoTo ex
+    
+    Dim rstMercadoria As RecordSet
+    
+    Set rstMercadoria = CurrentDb.OpenRecordset("SELECT * FROM [PesquisaPreco] WHERE [Codigo]=" & IDMercadoria, dbOpenDynaset, dbSeeChanges)
+    
+    Dim frmVendas As Form
+    Set frmVendas = Vendas_GetFormCurrent
+    
+    'ADICIONANDO PARA TELA DE VENDAS
+    If (PesquisaPreco_DestinoItem = "Vendas3") Or (PesquisaPreco_DestinoItem = "Vendas_Prevenda_Rapida") Then
+        
+        Set frmVendas = Vendas_GetFormCurrent(PesquisaPreco_DestinoItem)
+        
+        With CurrentDb.OpenRecordset("Vendas Efetuadas", dbOpenDynaset, dbSeeChanges)
+            .AddNew
+                .Fields("Código da Venda") = GetPedidoSelecionado
+                .Fields("Código da Mercadoria") = IDMercadoria
+                
+                If PesquisaPreco_DestinoItem = "Vendas_Prevenda_Rapida" Then
+                    .Fields("Quantidade") = frmVendas.Controls("txtMercadoriaQuantidade")
+                Else
+                    .Fields("Quantidade") = 1
+                    'Adicionar CaixaMetragem da função metragem Aqui
+                        .Fields("CaixaMetragem") = 1
+                    'Fim Adicionar CaixaMetragem da função metragem
+                End If
+                
+                .Fields("Preço") = rstMercadoria("Preco")
+                .Fields("PrecoBruto") = rstMercadoria("Preco")
+                .Fields("Produto") = rstMercadoria("Mercadoria")
+                .Fields("Produto_Referencia") = rstMercadoria("Ref")
+                '.Fields("Situação") = rstMercadoria("Situacao")
+                .Fields("Preço Compra2") = IIf(Loja_getPrecoCustoEnum(Nz(frmVendas.Controls("LojaOrigem"), "")) = 1, Nz(rstMercadoria("PrecoCompra"), 0), Nz(rstMercadoria("PrecoC"), 0))
+                .Fields("Comissão") = Nz(rstMercadoria("Comissao"), 0)
+                .Fields("TemPromocao") = Nz(rstMercadoria("TemPromocao"), 0)
+                .Fields("TipoGrupo") = Nz(rstMercadoria("Grupo"), "VAZIO")
+                .Fields("TipoPrecoItem") = Nz(frmVendas.Controls("TipoPrecoVenda"), "PADRAO")
+                .Fields("LancamentoAvulso") = (frmVendas.Controls("Consignacao") <> 0)
+                .Fields("Ad_Preço_de_Venda") = rstMercadoria("[Preço de Venda]")
+                .Fields("Ad_VendaA") = rstMercadoria("VendaA")
+                
+                If (PesquisaPreco_DestinoItem = "Vendas_Prevenda_Rapida") Then
+                    .Fields("[OrdemItem]") = Nz(DMax("OrdemItem", "[Vendas Efetuadas]", "[Código da Venda]=" & GetPedidoSelecionado), 0) + 1
+                End If
+                
+                Dim rsMercadoriaVinculoFiscal As RecordSet
+            
+                Set rsMercadoriaVinculoFiscal = CurrentDb.OpenRecordset("SELECT * FROM [VW_VinculoFiscal_TributacaoMercadoriaPadrao] " & _
+                                                   "WHERE [MercadoriaCodigo] = " & IDMercadoria & " AND " & _
+                                                   "[Loja] LIKE '" & frmVendas.Controls("LojaOrigem") & "'", dbOpenDynaset, dbSeeChanges)
+        
+                If rsMercadoriaVinculoFiscal.EOF = False Then
+                
+                    .Fields("NFCe_AliquotaItem") = Nz(rsMercadoriaVinculoFiscal("ICMS_AliquotaInterna"), 0)
+                    .Fields("NFCe_CFOPItem") = Nz(rsMercadoriaVinculoFiscal("NFCe_CFOP"), 0)
+                    
+                    .Fields("situação") = rsMercadoriaVinculoFiscal("[ST]")
+                    .Fields("NFCe_CST") = rsMercadoriaVinculoFiscal("[NFe_CST_Icms]")
+                    
+                    'Vendas_SetPISCOFINS
+                    Dim valorICMSParaExcluirDoPISCOFINS As Double
+                    Dim TotalItem As Double
+                    Dim totalItemLiquido As Double
+                    
+                    TotalItem = (Nz(.Fields("Preço"), 0) * Nz(.Fields("Quantidade"), 0))
+                    totalItemLiquido = TotalItem
+                    
+                    If Util_getCampoIntegrarLojas("PISCOFINS_ExcluirICMS", frmVendas.Controls("LojaOrigem")) Then
+                        valorICMSParaExcluirDoPISCOFINS = totalItemLiquido * (Nz(rsMercadoriaVinculoFiscal("ICMS_AliquotaInterna"), 0) / 100)
+                    End If
+                    
+                    .Fields("PIS_Cst") = Nz(rsMercadoriaVinculoFiscal("PIS_Cst"), 0)
+                    .Fields("PIS_Aliquota") = Nz(rsMercadoriaVinculoFiscal("PIS_Aliquota"), 0)
+                    .Fields("PIS_Base") = totalItemLiquido - valorICMSParaExcluirDoPISCOFINS
+                    .Fields("PIS_Valor") = (.Fields("PIS_Base") * (.Fields("PIS_Aliquota") / 100))
+                    
+                    .Fields("COFINS_Cst") = Nz(rsMercadoriaVinculoFiscal("COFINS_Cst"), 0)
+                    .Fields("COFINS_Aliquota") = Nz(rsMercadoriaVinculoFiscal("COFINS_Aliquota"), 0)
+                    .Fields("COFINS_Base") = totalItemLiquido - valorICMSParaExcluirDoPISCOFINS
+                    .Fields("COFINS_Valor") = (.Fields("COFINS_Base") * (.Fields("COFINS_Aliquota") / 100))
+                    
+                    .Fields("PisCofins_NaturezaReceita") = Nz(rsMercadoriaVinculoFiscal("PisCofins_NaturezaReceita"), 0)
+                    
+                End If
+                
+            .Update
+        End With
+    
+    'ADICIONANDO PARA TELA DE ORÇAMENTO
+    ElseIf (PesquisaPreco_DestinoItem = "Orçamento") Then
+    
+        With CurrentDb.OpenRecordset("ProdOrç", dbOpenDynaset, dbSeeChanges)
+            .AddNew
+                .Fields("Código da Venda") = [Forms]![Orçamento]![Registro]
+                .Fields("Código da Mercadoria") = IDMercadoria
+                .Fields("Quantidade") = 1
+                'Adicionar CaixaMetragem da função metragem Aqui
+                    .Fields("CaixaMetragem") = 1
+                'Fim Adicionar CaixaMetragem da função metragem
+                .Fields("Preço") = rstMercadoria("Preco")
+                .Fields("PrecoBruto") = rstMercadoria("Preco")
+                .Fields("Descriçãos") = rstMercadoria("Mercadoria")
+                .Fields("Produto_Referencia") = rstMercadoria("Ref")
+                .Fields("Unidade") = rstMercadoria("Medida")
+                .Fields("TemPromocao") = Nz(rstMercadoria("TemPromocao"), 0)
+                .Fields("TipoGrupo") = Nz(rstMercadoria("Grupo"), "VAZIO")
+                .Fields("TipoPrecoItem") = Nz([Forms]![Orçamento]![TipoPrecoOrcamento], "PADRAO")
+                .Fields("Ad_Preço_de_Venda") = rstMercadoria("[Preço de Venda]")
+                .Fields("Ad_VendaA") = rstMercadoria("VendaA")
+            .Update
+        End With
+        
+        inserirOrdemItem [Forms]![Orçamento]![Registro]
+        
+    End If
+    
+    MsgBox "Mercadoria adicionada com Sucesso!", vbInformation, getNomeApp & " - Informa"
+    
+    Exit Sub
+ex:
+    MsgBox "Erro no método AddItem: " & Err.description, vbCritical, getNomeApp & " - Aviso"
+        
+End Sub
+				
+####################subformulário orçamento
+CaixaMetragem Valor padrão=> 1
+Regra de validação=> É Negado Nulo
+####################Macro  Orça
+atualizarmercadoria
+#De
+ExecutarCódigo =setValorMetragemPadrao
+#Para
+ExecutarCódigo =setValorMetragemPadrao(0)
+
+
+####################Alterar Modulo  Softshop_Vendas
+#De
+        '--------METRAGEM----------
+        setValorMetragemPadrao
+#Para		
+        '--------METRAGEM----------
+        setValorMetragemPadrao (0)

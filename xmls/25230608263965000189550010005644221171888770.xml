@@ -1,0 +1,247 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe25230608263965000189550010005644221171888770" versao="4.00">
+      <ide>
+        <cUF>25</cUF>
+        <cNF>17188877</cNF>
+        <natOp>VENDAS DE PRODUTOS</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>564422</nNF>
+        <dhEmi>2023-06-07T08:27:54-03:00</dhEmi>
+        <dhSaiEnt>2023-06-07T08:27:54-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>2507507</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>0</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>3</indPres>
+        <indIntermed>0</indIntermed>
+        <procEmi>0</procEmi>
+        <verProc>4.00</verProc>
+      </ide>
+      <emit>
+        <CNPJ>08263965000189</CNPJ>
+        <xNome>FORTGIRO DISTRIBUIDORA DE AUTO PECAS LTDA</xNome>
+        <xFant>FORTGIRO</xFant>
+        <enderEmit>
+          <xLgr>RUA SA ANDRADE</xLgr>
+          <nro>368</nro>
+          <xBairro>VARADOURO</xBairro>
+          <cMun>2507507</cMun>
+          <xMun>JOAO PESSOA</xMun>
+          <UF>PB</UF>
+          <CEP>58010380</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8331331770</fone>
+        </enderEmit>
+        <IE>161494994</IE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>09318691000140</CNPJ>
+        <xNome>FALCAO DISTRIBUICAO E IMPORTACAO DE MOTOS E PECAS AUTO PECAS</xNome>
+        <enderDest>
+          <xLgr>R RUA MANOEL FRANCISCO VENANCIO</xLgr>
+          <nro>2836</nro>
+          <xBairro>CENTRO</xBairro>
+          <cMun>2501807</cMun>
+          <xMun>BAYEUX</xMun>
+          <UF>PB</UF>
+          <CEP>58306130</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>83888600158</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>161551980</IE>
+        <email>ESCRITORIOJP01@GMAIL.COM</email>
+      </dest>
+      <entrega>
+        <CNPJ>09318691000140</CNPJ>
+        <xLgr>AV LIBERDADE</xLgr>
+        <nro>2845</nro>
+        <xBairro>SESI</xBairro>
+        <cMun>2501807</cMun>
+        <xMun>BAYEUX</xMun>
+        <UF>PB</UF>
+      </entrega>
+      <autXML>
+        <CPF>87373602487</CPF>
+      </autXML>
+      <det nItem="1">
+        <prod>
+          <cProd>VTO8560</cProd>
+          <cEAN>7899613619074</cEAN>
+          <xProd>POLIA ALTERNADOR (8200113636) VTO</xProd>
+          <NCM>84835090</NCM>
+          <CEST>0105000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>5405</CFOP>
+          <uCom>PC</uCom>
+          <qCom>1.0000</qCom>
+          <vUnCom>186.950000</vUnCom>
+          <vProd>186.95</vProd>
+          <cEANTrib>7899613619074</cEANTrib>
+          <uTrib>PC</uTrib>
+          <qTrib>1.0000</qTrib>
+          <vUnTrib>186.950000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS60>
+              <orig>2</orig>
+              <CST>60</CST>
+              <vBCSTRet>0.00</vBCSTRet>
+              <pST>0.00</pST>
+              <vICMSSubstituto>0.00</vICMSSubstituto>
+              <vICMSSTRet>0.00</vICMSSTRet>
+            </ICMS60>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISNT>
+              <CST>04</CST>
+            </PISNT>
+          </PIS>
+          <COFINS>
+            <COFINSNT>
+              <CST>04</CST>
+            </COFINSNT>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vFCPST>0.00</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>186.95</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>186.95</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <vol>
+          <qVol>1</qVol>
+          <esp>VOL/CAIXA</esp>
+          <pesoL>1.000</pesoL>
+          <pesoB>1.000</pesoB>
+        </vol>
+      </transp>
+      <pag>
+        <detPag>
+          <tPag>90</tPag>
+          <vPag>0.00</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infCpl>FANTASIA: FALCAO MOTO PECAS - TRANSPORTADORA:GRUPO ENDERECO ENTREGA: Rua/Av.: AV LIBERDADE Num.:2845 CEP:58309-990 Bairro:SESI Cidade:BAYEUX UF:PB Pais:BRASIL - Val. Aproximado dos tributos R$ 75,45 (40,36%) Fonte: IBPT</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>08050998000140</CNPJ>
+        <xContato>PHIXA TECNOLOGIA</xContato>
+        <email>suporte@phixa.com.br</email>
+        <fone>8126269701</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe25230608263965000189550010005644221171888770">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>cIUAqVdg04xh549EDDo0io7+SP0=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>A66iiguWezrMEuvUKk3KSywzC+q+FQ2/WOX08ZaminAP57qqqJrRrS159UNPw9sg5fEW1+mFDMOo
+45SWyg/8Ah0PvER6IGAPm70QCrYNmBb9pUMxNeypb3kRE/gBqoyurb9VXOGYkO9WA+rJ2aSHN1rU
+kxeB3KjY50qywdpy842JTBOn+PQ4os9+B1e2wDKUassdmJHXZGM0uyD0HU82M27KhjGc7tCDqo0M
+vEwxJ/+L2MSOOcowbE2FrTezMX3Y8N2voHt8ON1H5PoimhDRni/0eIkQu+RliwlSLscaAKPSKfKE
+WOrU12i/3RlnU0i8cVWnzuXv4fFKdaXHaJgD8g==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>MIIIOzCCBiOgAwIBAgIIdauB5cZ18kEwDQYJKoZIhvcNAQELBQAwdTELMAkGA1UEBhMCQlIxEzAR
+BgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEgZGEgUmVjZWl0YSBGZWRlcmFs
+IGRvIEJyYXNpbCAtIFJGQjEZMBcGA1UEAxMQQUMgT05MSU5FIFJGQiB2NTAeFw0yMjEwMTQxMjQ0
+NDVaFw0yMzEwMTQxMjQ0NDVaMIIBOTELMAkGA1UEBhMCQlIxCzAJBgNVBAgTAlBCMRQwEgYDVQQH
+EwtKT0FPIFBFU1NPQTETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBk
+YSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRYwFAYDVQQLEw1SRkIgZS1DTlBKIEEx
+MSkwJwYDVQQLEyBBUiBBVE9DU0lHTiBDRVJUSUZJQ0FDQU8gRElHSVRBTDEZMBcGA1UECxMQVmlk
+ZW9jb25mZXJlbmNpYTEXMBUGA1UECxMOMjYzNjI2MzMwMDAxMzMxQzBBBgNVBAMTOkZPUlRHSVJP
+IERJU1RSSUJVSURPUkEgREUgQVVUTyBQRUNBUyBFSVJFTEk6MDgyNjM5NjUwMDAxODkwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDHhQKC4WdaBNJmbYL4xM1k6A/s0gWM8prfl4ijeiWk
+9V/iGz+b0hSUl8daki0tDT5tfADWNRUKJeU+ips7BOFrmjPI1TyrdKFFL8CoT6NfHj1Q9YVMNBSl
+YHiJ1pddfvfjJO5eCxLIkzU4qVN/3UJt3SiyaXb7WyTu9ng38jeKYsA6KNq9pEw3L/Z1W28tH1Vv
+WtKbV2gsijTYS6E5PjrFhQfhtsAygD0LVuMWOb0GED51eSO4AF7vHtFt340igXFbH7FB4sDdA93x
+vQ436/k/sSM7t3K6pTMZXZhUDo7pCW5y5xb2XXYBvl8DY+BE4ATtSNHoSFdiGYj3uTo6Xy3TAgMB
+AAGjggMHMIIDAzCBowYIKwYBBQUHAQEEgZYwgZMwXAYIKwYBBQUHMAKGUGh0dHA6Ly9pY3AtYnJh
+c2lsLnZwa2kudmFsaWRjZXJ0aWZpY2Fkb3JhLmNvbS5ici9hYy1vbmxpbmVyZmIvYWMtb25saW5l
+cmZidjUucDdiMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcHY1LnZhbGlkY2VydGlmaWNhZG9yYS5j
+b20uYnIwCQYDVR0TBAIwADAfBgNVHSMEGDAWgBTsycyrsijVobx3QK7fkG/D7X+86TB3BgNVHSAE
+cDBuMGwGBmBMAQIBNzBiMGAGCCsGAQUFBwIBFlRodHRwOi8vaWNwLWJyYXNpbC52cGtpLnZhbGlk
+Y2VydGlmaWNhZG9yYS5jb20uYnIvYWMtb25saW5lcmZiL2RwYy1hYy1vbmxpbmVyZmJ2NS5wZGYw
+gboGA1UdHwSBsjCBrzBVoFOgUYZPaHR0cDovL2ljcC1icmFzaWwudmFsaWRjZXJ0aWZpY2Fkb3Jh
+LmNvbS5ici9hYy1vbmxpbmVyZmIvbGNyLWFjLW9ubGluZXJmYnY1LmNybDBWoFSgUoZQaHR0cDov
+L2ljcC1icmFzaWwyLnZhbGlkY2VydGlmaWNhZG9yYS5jb20uYnIvYWMtb25saW5lcmZiL2xjci1h
+Yy1vbmxpbmVyZmJ2NS5jcmwwDgYDVR0PAQH/BAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr
+BgEFBQcDBDCByQYDVR0RBIHBMIG+gR9mb3J0Z2lyb2Rpc3RyaWJ1aWRvcmFAZ21haWwuY29toDgG
+BWBMAQMEoC8ELTMwMDQxOTg0MDUyMDU3MDY0MjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAt
+BgVgTAEDAqAkBCJMVUlaIEhFTlJJUVVFIFJJQkVJUk8gRkFMQ0FPIEZJTEhPoBkGBWBMAQMDoBAE
+DjA4MjYzOTY1MDAwMTg5oBcGBWBMAQMHoA4EDDAwMDAwMDAwMDAwMDANBgkqhkiG9w0BAQsFAAOC
+AgEAQnzU8CLDTUdmJf9qYWPvBCyCzu+YfNNAVOBIByMOw/jFR/ssdI74HUbAj/kLAMaZ0TBm3mVh
+NEDC+nfY12Ol7CsvvPOskXSteY/7vEXZ4Q5g1v9NsE/9O6seOTL8RvjDK3mKqH69ppSlFnpZHIbR
+KQodfqY/kLHrvmszQkc7S8cV5UOmSHkXzmV2rREZA8bH+T7sgx3eAY9gKEvhXRoXZcxwJBdPcZRh
+XwHpD6aohTe9Fx7qd9w5eEADNjzh8uNz4GUOL9xNoamiR7PzR/6Zj/t/j2ZiIa+zo+gKbXi06hPe
+gxGH/bh1cfQBxvIz0iSmrVHMKh0EK5uTQrarYTatZmYTjIVW/WAT7oZsNFHC4fGIVz9wXIOQ/vnj
+9zEyTQ3UB+P3PJ9lLz17uaaHVZSipxC2xyof8Qhd751ASIVa2CYtewxMXHKChVSvBmBU8jooLaDB
+xEHpp8NQhOGzTQnrDlmfBMS4o9gOvGhbxeqMozHqCQiHjELOMvScriJqlB5uX7TnOvyohw95/HR2
+Vn5vAGiD8Fkb7dRsy0a58E7mIorDAoxQzBdQwnf9XUwnVAuBTi0MvgUh7Spp5kKZ6YCZLEPY1pIP
+AFeCcvMDhQCqsk8GG0yEsfAShJLJefbKtl7BsxlpDA3W2Yjhz5tpXeXxfsYOZ/a3+JJS8TzTCR9G
+aa8=</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202304261131</verAplic>
+      <chNFe>25230608263965000189550010005644221171888770</chNFe>
+      <dhRecbto>2023-06-07T08:28:02-03:00</dhRecbto>
+      <nProt>325230016730100</nProt>
+      <digVal>cIUAqVdg04xh549EDDo0io7+SP0=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

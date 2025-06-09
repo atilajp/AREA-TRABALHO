@@ -1,0 +1,329 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe42230617645625000103550020000189011873837216" versao="4.00">
+      <ide>
+        <cUF>42</cUF>
+        <cNF>87383721</cNF>
+        <natOp>Retorno Mercad.ou Bem P/Cons.ou Reparo</natOp>
+        <mod>55</mod>
+        <serie>2</serie>
+        <nNF>18901</nNF>
+        <dhEmi>2023-06-05T10:05:00-03:00</dhEmi>
+        <dhSaiEnt>2023-06-05T10:05:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>4202701</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>6</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>1</indPres>
+        <indIntermed>0</indIntermed>
+        <procEmi>0</procEmi>
+        <verProc>5.10.2.79</verProc>
+        <NFref>
+          <refNFe>25230509318691000140550010002047551154926871</refNFe>
+        </NFref>
+      </ide>
+      <emit>
+        <CNPJ>17645625000103</CNPJ>
+        <xNome>ENERGIA ERBS INDUSTRIA E TRANSPORTE LTDA</xNome>
+        <xFant>ENERGIA ERBS</xFant>
+        <enderEmit>
+          <xLgr>RODOVIA PEDRO MERIZIO SC 486</xLgr>
+          <nro>9800</nro>
+          <xCpl>KM 2</xCpl>
+          <xBairro>PEDRAS GRANDES</xBairro>
+          <cMun>4202701</cMun>
+          <xMun>BOTUVERA</xMun>
+          <UF>SC</UF>
+          <CEP>88295000</CEP>
+          <cPais>1058</cPais>
+          <xPais>Brasil</xPais>
+          <fone>4733593300</fone>
+        </enderEmit>
+        <IE>256964670</IE>
+        <IM>1195</IM>
+        <CNAE>2006001</CNAE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>09318691000140</CNPJ>
+        <xNome>FALCAO DISTRIBUICAO E IMPORTACAO DE MOTOS E PECAS AUTO PECAS</xNome>
+        <enderDest>
+          <xLgr>RUA MANOEL FRANCISCO VENANCIO</xLgr>
+          <nro>S/N</nro>
+          <xBairro>CENTRO</xBairro>
+          <cMun>2504009</cMun>
+          <xMun>BAYEUX</xMun>
+          <UF>PB</UF>
+          <CEP>58306130</CEP>
+          <cPais>1058</cPais>
+          <xPais>Brasil</xPais>
+          <fone>8332416986</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>161551980</IE>
+        <email>escritoriojp01@gmail.com</email>
+      </dest>
+      <autXML>
+        <CNPJ>29685588000146</CNPJ>
+      </autXML>
+      <det nItem="1">
+        <prod>
+          <cProd>AEPM050D0F0500</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>ONU 2800 BATERIAS ELETRICAS UMIDAS, A PROVA DE VAZAMENTO, 8, 1,75KG -BATERIA PREMIUM ERX 5BS</xProd>
+          <NCM>85071010</NCM>
+          <CEST>0105301</CEST>
+          <CFOP>6916</CFOP>
+          <uCom>PC</uCom>
+          <qCom>2.0000</qCom>
+          <vUnCom>71.6000000000</vUnCom>
+          <vProd>143.20</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>PC</uTrib>
+          <qTrib>2.0000</qTrib>
+          <vUnTrib>71.6000000000</vUnTrib>
+          <indTot>1</indTot>
+          <nFCI>72432F7D-F1CC-45A7-980E-E3FFA763F245</nFCI>
+        </prod>
+        <imposto>
+          <vTotTrib>0</vTotTrib>
+          <ICMS>
+            <ICMS40>
+              <orig>5</orig>
+              <CST>50</CST>
+            </ICMS40>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>0</vBC>
+              <pIPI>0</pIPI>
+              <vIPI>0</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pPIS>0</pPIS>
+              <vPIS>0</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pCOFINS>0</pCOFINS>
+              <vCOFINS>0</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>AEPM060D0G0500</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>ONU 2800 BATERIAS ELETRICAS UMIDAS, A PROVA DE VAZAMENTO, 8, 2,05KG - BATERIA PREMIUM ERX 6BS</xProd>
+          <NCM>85071010</NCM>
+          <CEST>0105301</CEST>
+          <CFOP>6916</CFOP>
+          <uCom>PC</uCom>
+          <qCom>2.0000</qCom>
+          <vUnCom>75.9800000000</vUnCom>
+          <vProd>151.96</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>PC</uTrib>
+          <qTrib>2.0000</qTrib>
+          <vUnTrib>75.9800000000</vUnTrib>
+          <indTot>1</indTot>
+          <nFCI>EE57F8D5-6C53-463B-AD3F-BB0D2D87C305</nFCI>
+        </prod>
+        <imposto>
+          <vTotTrib>0</vTotTrib>
+          <ICMS>
+            <ICMS40>
+              <orig>5</orig>
+              <CST>50</CST>
+            </ICMS40>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>0</vBC>
+              <pIPI>0</pIPI>
+              <vIPI>0</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pPIS>0</pPIS>
+              <vPIS>0</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pCOFINS>0</pCOFINS>
+              <vCOFINS>0</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+      </det>
+      <det nItem="3">
+        <prod>
+          <cProd>AEPM070D0G0700</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>ONU 2800 BATERIAS ELETRICAS UMIDAS, A PROVA DE VAZAMENTO, 8, 2,42KG -BATERIA PREMIUM ETX 7BS</xProd>
+          <NCM>85071010</NCM>
+          <CEST>0105301</CEST>
+          <CFOP>6916</CFOP>
+          <uCom>PC</uCom>
+          <qCom>1.0000</qCom>
+          <vUnCom>88.8700000000</vUnCom>
+          <vProd>88.87</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>PC</uTrib>
+          <qTrib>1.0000</qTrib>
+          <vUnTrib>88.8700000000</vUnTrib>
+          <indTot>1</indTot>
+          <nFCI>22090826-3128-4778-A3E2-5966C10DF922</nFCI>
+        </prod>
+        <imposto>
+          <vTotTrib>0</vTotTrib>
+          <ICMS>
+            <ICMS40>
+              <orig>5</orig>
+              <CST>50</CST>
+            </ICMS40>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>0</vBC>
+              <pIPI>0</pIPI>
+              <vIPI>0</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pPIS>0</pPIS>
+              <vPIS>0</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>49</CST>
+              <vBC>0</vBC>
+              <pCOFINS>0</pCOFINS>
+              <vCOFINS>0</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vFCPST>0.00</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>384.03</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>384.03</vNF>
+          <vTotTrib>0.00</vTotTrib>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>0</modFrete>
+        <transporta>
+          <CNPJ>82666983000407</CNPJ>
+          <xNome>KELLER TRANSPORTES LTDA</xNome>
+          <IE>254413919</IE>
+          <xEnder>RUA AUGUSTO BRESSANINI, 60</xEnder>
+          <xMun>BLUMENAU</xMun>
+          <UF>SC</UF>
+        </transporta>
+        <vol>
+          <qVol>1</qVol>
+          <esp>Caixa(s)</esp>
+          <pesoL>10.020</pesoL>
+          <pesoB>10.020</pesoB>
+        </vol>
+      </transp>
+      <pag>
+        <detPag>
+          <tPag>90</tPag>
+          <vPag>0.00</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>Por favor, conferir a mercadoria no ato da entrega, reclamacoes ou divergencias entre em contato com o SAC atraves do telefone/whatsApp (47)3359-3300 ou e-mail sac@erbs.com.br. - Pedido: // ICMS suspenso cfe art. 36, inciso II, Anexo 2 do RICMS-SC/2001. // Nao incidencia de IPI, cfe. art. 5, inciso XI, do RIPI/2010. // Declaracao do expedidor: Declaro que os produtos perigosos estao adequadamente classificados, embalados, identificados, e estivados para suportar os riscos das operacoes de transporte e que atendem as exigencias da regulamentacao. // Retorno Remessa p/ Conserto ref. sua Nota Fiscal n. NF 204755 Emissao 15/05/2023 &lt;NUMNFR&gt; Emitida em &lt;DATNFR&gt;. //  Redespacho (CIF) - EXPRESS T C M LT End. AV LINDOMAR GOMES DE OLIVEIRA, 1143 Bairro: CIDADE INDUSTRIAL SATELITE DE SAO PAULO Cidade: GUARULHOS-SP CNPJ: 01.834.475/0002-27 Fone: (11)2488-5499 DISPENSA DE RETENCAO DO ICMS-ST CONFORME TERMO DE ACORDO N 2014.00000 &lt;br&gt;PEDIDO 68123</infAdFisco>
+        <obsCont xCampo="EMAILTRANSPORTADOR">
+          <xTexto>sac.brq@kellertransportes.com.br</xTexto>
+        </obsCont>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>80680093000181</CNPJ>
+        <xContato>Fernando Silva</xContato>
+        <email>questoeslegais@senior.com.br</email>
+        <fone>4732213300</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe42230617645625000103550020000189011873837216">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>EPnR7cM4/+EBVh4DsmWZ5DKtXcM=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>L3IhFi3y0vYkVafj98J8Q07lblHeVbYlHOiEvYHD4TQ8IoQ5MN2qHjxX5QGtWpY++S7gxAFq72MGQg++aDuO/9Cj0v6BslAPnLFEatQZ1IVEHc0EuACnnFNEKeWWDOAEDKRwN6EWg0A0xcSPfXRQh+z1y07jYN0X0BhVzNQX3AO2q7/RocQn9UHy/bH1iXYwuJrjVxA0VieKnAeGVdZwrFWp/EAaF0SXYxXXV5aHuxgw/GdkCtw7iLqdR+4pRCHG0Ko0B/vD73MGTnt/d1/0ARFeCpROn+wVEfOecMK171pWQukOUjAgV4ixDmV0atLPlLiOcJWpfcegFHL/bFqA2g==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202304261131</verAplic>
+      <chNFe>42230617645625000103550020000189011873837216</chNFe>
+      <dhRecbto>2023-06-05T10:06:11-03:00</dhRecbto>
+      <nProt>342230124065205</nProt>
+      <digVal>EPnR7cM4/+EBVh4DsmWZ5DKtXcM=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

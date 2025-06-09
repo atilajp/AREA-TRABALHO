@@ -1,0 +1,27 @@
+Private Function IB_getBoletoFatorVencimento(ByVal DataVencimento As Variant) As String
+'FUNÇÃO COM O OBJETIVO DE CALCULAR O FATOR DE VENCIMENTO DO BOLETO
+    On Error GoTo ex:
+    
+    If isNZ(DataVencimento) Then
+        IB_getBoletoFatorVencimento = ""
+    Else
+        Dim DataVenc As Date
+        DataVenc = CDate(DataVencimento)
+        
+        Dim DataLimite As Date
+        DataLimite = CDate("22/02/2025")
+        
+        If DataVenc < DataLimite Then
+            IB_getBoletoFatorVencimento = DateDiff("d", DateSerial(1997, 10, 7), DataVenc)
+        Else
+            IB_getBoletoFatorVencimento = DateDiff("d", DateSerial(2022, 5, 29), DataVenc)
+        End If
+    End If
+    
+    Exit Function
+    
+ex:
+    IB_getBoletoFatorVencimento = ""
+    Err.Clear
+    
+End Function

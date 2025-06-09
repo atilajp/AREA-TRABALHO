@@ -1,0 +1,327 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe25230603661185000173550010000221781999778210">
+      <ide>
+        <cUF>25</cUF>
+        <cNF>99977821</cNF>
+        <natOp>VENDA DE PRODUCAO DO ESTABELECIMENTO</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>22178</nNF>
+        <dhEmi>2023-06-06T14:20:24-03:00</dhEmi>
+        <dhSaiEnt>2023-06-06T14:20:24-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>2507507</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>0</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <indIntermed>0</indIntermed>
+        <procEmi>0</procEmi>
+        <verProc>80.2023.05051555</verProc>
+      </ide>
+      <emit>
+        <CNPJ>03661185000173</CNPJ>
+        <xNome>EUCLIDES JOAQUIM DE OLIVEIRA ME</xNome>
+        <xFant>JP ETIQUETAS</xFant>
+        <enderEmit>
+          <xLgr>ROD BR-101</xLgr>
+          <nro>S/N</nro>
+          <xCpl>GALPAO09 A</xCpl>
+          <xBairro>DISTRITO INDUSTRIAL</xBairro>
+          <cMun>2507507</cMun>
+          <xMun>JO?O PESSOA</xMun>
+          <UF>PB</UF>
+          <CEP>58082000</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8332366132</fone>
+        </enderEmit>
+        <IE>161962513</IE>
+        <IM>1156136</IM>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>09318691000140</CNPJ>
+        <xNome>FALCAO DISTRIBUICAO E IMPORTACAO DE MOTOS E PECAS AUTO PECAS</xNome>
+        <enderDest>
+          <xLgr>R. MANOEL FRANCISCO VEN?NCIO</xLgr>
+          <nro>0SN</nro>
+          <xBairro>CENTRO</xBairro>
+          <cMun>2501807</cMun>
+          <xMun>BAYEUX</xMun>
+          <UF>PB</UF>
+          <CEP>58306180</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8332323282</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>161551980</IE>
+        <email>ESCRITORIOJP01@GMAIL.COM</email>
+      </dest>
+      <autXML>
+        <CNPJ>15642030000179</CNPJ>
+      </autXML>
+      <det nItem="1">
+        <prod>
+          <cProd>PA000000000099</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>ETIQUETA ADESIVA 100 X 120 MM RL C/30 MTS TP</xProd>
+          <NCM>48211000</NCM>
+          <CFOP>5101</CFOP>
+          <uCom>RL</uCom>
+          <qCom>100.0000</qCom>
+          <vUnCom>19.6100000000</vUnCom>
+          <vProd>1961.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>RL</uTrib>
+          <qTrib>100.0000</qTrib>
+          <vUnTrib>19.6100000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>1961.00</vBC>
+              <pICMS>18.00</pICMS>
+              <vICMS>352.98</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>1608.02</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>26.53</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>1608.02</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>122.21</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>PR000000000001</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>RIBBON CERA 110 MM X 74 MTS - VIT?RIA R?GIA</xProd>
+          <NCM>84433232</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>12.0000</qCom>
+          <vUnCom>15.0000000000</vUnCom>
+          <vProd>180.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>12.0000</qTrib>
+          <vUnTrib>15.0000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>180.00</vBC>
+              <pICMS>18.00</pICMS>
+              <vICMS>32.40</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>53</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>147.60</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>2.44</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>147.60</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>11.22</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+      </det>
+      <det nItem="3">
+        <prod>
+          <cProd>PR000000000003</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>RIBBON CERA 110 MM X 300 MTS - VIT?RIA R?GIA</xProd>
+          <NCM>84433232</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>4.0000</qCom>
+          <vUnCom>50.0000000000</vUnCom>
+          <vProd>200.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>4.0000</qTrib>
+          <vUnTrib>50.0000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>200.00</vBC>
+              <pICMS>18.00</pICMS>
+              <vICMS>36.00</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>53</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>164.00</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>2.71</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>164.00</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>12.46</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>2341.00</vBC>
+          <vICMS>421.38</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vFCPST>0.00</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>2341.00</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>31.68</vPIS>
+          <vCOFINS>145.89</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>2341.00</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>0</modFrete>
+        <vol>
+          <qVol>7</qVol>
+          <esp>CAIXA</esp>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>000022178</nFat>
+          <vOrig>2341.00</vOrig>
+          <vDesc>0.00</vDesc>
+          <vLiq>2341.00</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2023-07-04</dVenc>
+          <vDup>780.33</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2023-07-11</dVenc>
+          <vDup>780.33</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2023-07-18</dVenc>
+          <vDup>780.34</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <indPag>1</indPag>
+          <tPag>15</tPag>
+          <vPag>2341.00</vPag>
+        </detPag>
+      </pag>
+      <infAdic />
+      <infRespTec>
+        <CNPJ>10482137000183</CNPJ>
+        <xContato>Thomaz Belgine</xContato>
+        <email>thomaz@iquattro.com.br</email>
+        <fone>1938264345</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe25230603661185000173550010000221781999778210">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>DfAw8W72bxiKisSUj0cCUHIZcG4=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>UHfUcggIsKnqHfjlSayb21+MDYZuftLH2nYASZPYZhbgvNEnd5PlfxRdP9kzcD4dynf29VrpNaFW5EcalhVRzEyP6l+8DAmWPTVsiPP4CvsmgjDJhb43i5EWKpCrnYFMzPOqsqzr9kqaSnAPjyF+RrJUHA/tjGCfbuVGxsZqS0HFfXkThwyPgC2Xn4FUcpzb49NQenOq61Atsa1dzujc+XM4RpPmyK5C0OXcGt2Z1V/drei+JdJWyMvKMReWMrD+qlVrYq+utyVuRIYseHOOSbAjhFK9AbFddzyym3Su6N8OSI50Hjd3YsCX1SpM2YOeiddjOiFtMzTX7ejdRP6N3Q==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202304261131</verAplic>
+      <chNFe>25230603661185000173550010000221781999778210</chNFe>
+      <dhRecbto>2023-06-06T14:21:12-03:00</dhRecbto>
+      <nProt>325230016632611</nProt>
+      <digVal>DfAw8W72bxiKisSUj0cCUHIZcG4=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>
