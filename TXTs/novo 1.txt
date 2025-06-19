@@ -1,7 +1,34 @@
-1327,48
-8,5
-1440,32
+Contrato 1756
 
-I3
-17
 
+RFC N. 180554 SUFRAMED
+1 - ORDEM DE SEPARAÇÃO, DEIXAR ALGUMAS INFORMAÇÕES NO SEGUINTE FORMATO ABAIXO DO CABEÇAHO:
+ENVIADO PARA SEP CAMPO ASSINAR | SEPARADO CAMPO ASSINAR | CONFERENCIA CAMPO ASSINAR
+DATA    HORA                   | DATA     HORA          | DATA         HORA
+2 - CRIAR NO GRUPO SEQUENCIA QUE VAI INFLUENCIAR NA ORDEM DO GRUPO NA ORDEM DE SEPARAÇÃO;
+3 - NA LISTA DOS PRODUTOS NA TELA DE PEDIDO, ABREVIAR OS CAMPO PRIORIDADE PROMOÇÃO PARA PRI E PRO;
+4 - PEDIDO IR PARA GESTÃO DE ENTREGA, APENAS SE TIVER FORMA DE PAGAMENTO PREENCHIDO;
+	Retirar Cancelados.
+5 - COLOCAR NO PAINEL DE PEDIDO UMA COLUNA COM O BAIRRO DO CLIENTE;
+	Novo status Para Pedido Conferido e Expedido.
+6 - NA GESTÃO DE ENTREGA, PRECISAMOS QUE APAREÇA O LOTE INFORMANDO NO PEDIDO PARA CONFERENCIA;
+	Trazer as informações de pedido para tela de lote Serial.8
+
+Add. Confimar Fila de Separação todos os pedidos.
+
+
+ERRO:
+
+1 - PEDIDO COM ORIGEM DO ORÇAMENTO NÃO APARECE NA GESTÃO DE ENTREGA;
+2 - GESTÃO DE ENTREGA O SISTEMA NÃO ACEITA OU ENCONTRA O PRODUTO QUANDO PISTOLAMOS O COD DE BARRAS;
+OBS.: PRIORIZAR O MESMO COLABORADOR QUE FEZ A ULTIMAS ALTERÇÕES
+
+
+REFC 222
+
+
+
+Na Lista da tela de Separação e conferencia Remover os itens que não estão com situação pendente.
+Na Lista da tela de Separação e conferencia Colocar lote e Serial na Tela dos conferidos.
+Alterar imgem do painel de pedidos de C Verde para L verde
+Colocar na impressão de Pedido de Separação. (Retirada ou Entrega). Em Destaque. (Caixa ou checbox ou Negrito.)
