@@ -1,0 +1,30 @@
+https://www.youtube.com/watch?v=8Q75IV7-BN4
+
+https://dtnetwork.com.br/chat-corporativo-open-source/
+
+
+Live Helper Chat  
+
+
+
+
+
+
+ApiKey:Yh!P-tH2mfYWyUk3XKqr
+
+
+
+
+Nova instancia:pvqluw47flmdxlyr68qr6e
+
+
+
+ wget https://raw.githubusercontent.com/baptisteArno/typebot.io/latest/docker-compose.yml
+ wget https://raw.githubusercontent.com/baptisteArno/typebot.io/latest/.env.example -O .env
+
+
+
+
+Esse é melhor 
+https://www.youtube.com/watch?v=uRWJSTBKsuY
+Chatwoot e WhatsApp Direto no Seu Computador: Sem VPS e Sem Custos!
