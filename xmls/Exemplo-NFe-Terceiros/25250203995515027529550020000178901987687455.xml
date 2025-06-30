@@ -1,0 +1,37 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><NFe><infNFe Id="NFe25250203995515027529550020000178901987687455" versao="4.00"><ide><cUF>25</cUF><cNF>98768745</cNF><natOp>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</natOp><mod>55</mod><serie>2</serie><nNF>17890</nNF><dhEmi>2025-02-12T15:57:23-03:00</dhEmi><dhSaiEnt>2025-02-12T15:57:23-03:00</dhSaiEnt><tpNF>1</tpNF><idDest>1</idDest><cMunFG>2501807</cMunFG><tpImp>1</tpImp><tpEmis>1</tpEmis><cDV>5</cDV><tpAmb>1</tpAmb><finNFe>1</finNFe><indFinal>0</indFinal><indPres>0</indPres><procEmi>0</procEmi><verProc>GMCore</verProc></ide><emit><CNPJ>03995515027529</CNPJ><xNome>MATEUS SUPERMERCADOS S A MIX BAYEUX</xNome><enderEmit><xLgr>AV LIBERDADE</xLgr><nro>2466A</nro><xBairro>BAIRRO SESI</xBairro><cMun>2501807</cMun><xMun>BAYEUX</xMun><UF>PB</UF><CEP>58111400</CEP><cPais>1058</cPais><xPais>Brasil</xPais><fone>0021083500</fone></enderEmit><IE>164548149</IE><CRT>3</CRT></emit><dest><CNPJ>09318691000140</CNPJ><xNome>FALCAO DISTRIBUICAO E IMPORTACAO DE MOTOS E PECAS AUTO PECAS</xNome><enderDest><xLgr>R RUA MANOEL FRANCISCO VENANCIO</xLgr><nro>S/N</nro><xBairro>CENTRO</xBairro><cMun>2501807</cMun><xMun>BAYEUX</xMun><UF>PB</UF><CEP>58306130</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>83996093031</fone></enderDest><indIEDest>1</indIEDest><IE>161551980</IE></dest><det nItem="1"><prod><cProd>101129</cProd><cEAN>7898305940137</cEAN><xProd>MOLHO INGLES SABOR ATIVO 150ML</xProd><NCM>21039021</NCM><CFOP>5102</CFOP><uCom>UN</uCom><qCom>1</qCom><vUnCom>2.25</vUnCom><vProd>2.25</vProd><cEANTrib>7898305940137</cEANTrib><uTrib>UN</uTrib><qTrib>1</qTrib><vUnTrib>2.25</vUnTrib><indTot>1</indTot></prod><imposto><ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>2</modBC><vBC>2.25</vBC><pICMS>20</pICMS><vICMS>0.45</vICMS></ICMS00></ICMS><PIS><PISAliq><CST>01</CST><vBC>1.80</vBC><pPIS>1.65</pPIS><vPIS>0.03</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>1.80</vBC><pCOFINS>7.60</pCOFINS><vCOFINS>0.14</vCOFINS></COFINSAliq></COFINS></imposto></det><total><ICMSTot><vBC>2.25</vBC><vICMS>0.45</vICMS><vICMSDeson>0</vICMSDeson><vFCPUFDest>0</vFCPUFDest><vICMSUFDest>0</vICMSUFDest><vICMSUFRemet>0</vICMSUFRemet><vFCP>0</vFCP><vBCST>0</vBCST><vST>0</vST><vFCPST>0</vFCPST><vFCPSTRet>0</vFCPSTRet><vProd>2.25</vProd><vFrete>0</vFrete><vSeg>0</vSeg><vDesc>0</vDesc><vII>0</vII><vIPI>0</vIPI><vIPIDevol>0</vIPIDevol><vPIS>0.03</vPIS><vCOFINS>0.14</vCOFINS><vOutro>0</vOutro><vNF>2.25</vNF></ICMSTot></total><transp><modFrete>0</modFrete><vol><qVol>1</qVol><esp>VOLUMES</esp><marca>DIVERSOS</marca><pesoL>0.190</pesoL><pesoB>0.190</pesoB></vol></transp><cobr><fat><nFat>17890</nFat><vOrig>2.25</vOrig><vDesc>0</vDesc><vLiq>2.25</vLiq></fat><dup><nDup>001</nDup><dVenc>2025-02-17</dVenc><vDup>2.25</vDup></dup></cobr><pag><detPag><tPag>14</tPag><vPag>2.25</vPag></detPag></pag><infAdic><infCpl>VENDEDOR: WILLIANE BEATRIZ SOARES CAMPOS.</infCpl></infAdic></infNFe><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#NFe25250203995515027529550020000178901987687455"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>+WZR7ijL45m2RJ9Rc3laePpQzWU=</DigestValue></Reference></SignedInfo><SignatureValue>VjZo5fyb8vWb/tZTvIQQ1bssVnrwtyIiM/tRm1wZMkIEY338TBLBdsjDIl5WYZbxO/yWZMo16PHW
+64qU1p7VsEf7i24aBuPZY0kSEu546NSwT5p2AkOvodZ5eK0+Q1w/S31XtUeAEnJCLJ73oTJ06iNl
+0zSDBS5M5+ForG/A4KyAgEWucs8JWd6/NmGe/Sw8AMKEREgrkq1UISyL88Lx98khk2ehOnPDrPTf
+oXp1dusszRIhdZ2rg3ixCn/pjN/ZwQ8ujAFqBtSejLhUZrFdoV161Dm4mwVnjPIBIhFofniZMWho
+f9Jvf+Av1wCnLj6w2DnQesLultiWC2gz2tAuSA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIHRzCCBS+gAwIBAgIIWQwkEhM1l9YwDQYJKoZIhvcNAQELBQAwWTELMAkGA1UEBhMCQlIxEzAR
+BgNVBAoTCklDUC1CcmFzaWwxFTATBgNVBAsTDEFDIFNPTFVUSSB2NTEeMBwGA1UEAxMVQUMgU09M
+VVRJIE11bHRpcGxhIHY1MB4XDTI0MTIxMzExNTgwMFoXDTI1MTIxMzExNTgwMFowgeYxCzAJBgNV
+BAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJNQTERMA8GA1UEBxMIU2FvIEx1
+aXMxHjAcBgNVBAsTFUFDIFNPTFVUSSBNdWx0aXBsYSB2NTEXMBUGA1UECxMOMzU2MjI0MDYwMDAx
+OTAxHDAaBgNVBAsTE0NlcnRpZmljYWRvIERpZ2l0YWwxGjAYBgNVBAsTEUNlcnRpZmljYWRvIFBK
+IEExMS8wLQYDVQQDEyZNQVRFVVMgU1VQRVJNRVJDQURPUyBTQTowMzk5NTUxNTAwMTMwOTCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKlVrt6nus3DHf4CLOGwa5TeC5J3wbPmqHzLPESZ
+YSskwX6HX0/gMgaYufsREZCpBVQHt43cdEI2AF94RWi2FvHd5H4IIkvbf6dPMA1m+Dp7wf4zV8sG
+hvCFoy79Y3kFV+wGjkT1JVMvIeMI2Ik3G2ghZH3oTRoBDmqG2RK1gaeiTCpBFC0fCuH7P3p+KV1i
+u+dMG9yvQmcL6k8ACJSb+g9kEAHzA4Jz6zrbNqQVa/iN5GjUNmchl+UUeLiEoppRWInwQwfYAB4F
+YXOqiqtAsFhImQ2eLEbMnyRqO/5dxzaPlr7LmOZosqj0SSpsPolpLOVx/+ae5ZQLqyA+GPPmAQkC
+AwEAAaOCAoMwggJ/MAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUxVLtJYAJ35yCyJ9Hxt20XzHdubEw
+VAYIKwYBBQUHAQEESDBGMEQGCCsGAQUFBzAChjhodHRwOi8vY2NkLmFjc29sdXRpLmNvbS5ici9s
+Y3IvYWMtc29sdXRpLW11bHRpcGxhLXY1LnA3YjCBvgYDVR0RBIG2MIGzgSBjb3JyZWEuY2FybG9z
+QGdydXBvbWF0ZXVzLmNvbS5icqAhBgVgTAEDAqAYExZJTFNPTiBNQVRFVVMgUk9EUklHVUVToBkG
+BWBMAQMDoBATDjAzOTk1NTE1MDAxMzA5oDgGBWBMAQMEoC8TLTA2MDMxOTYzMjI1ODQwMTMzMDQw
+MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAXBgVgTAEDB6AOEwwwMDAwMDAwMDAwMDAwXQYDVR0g
+BFYwVDBSBgZgTAECASYwSDBGBggrBgEFBQcCARY6aHR0cDovL2NjZC5hY3NvbHV0aS5jb20uYnIv
+ZG9jcy9kcGMtYWMtc29sdXRpLW11bHRpcGxhLnBkZjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYB
+BQUHAwQwgYwGA1UdHwSBhDCBgTA+oDygOoY4aHR0cDovL2NjZC5hY3NvbHV0aS5jb20uYnIvbGNy
+L2FjLXNvbHV0aS1tdWx0aXBsYS12NS5jcmwwP6A9oDuGOWh0dHA6Ly9jY2QyLmFjc29sdXRpLmNv
+bS5ici9sY3IvYWMtc29sdXRpLW11bHRpcGxhLXY1LmNybDAdBgNVHQ4EFgQU4oxiwzfl2+J8pQhn
+uJx/I3KeyCowDgYDVR0PAQH/BAQDAgXgMA0GCSqGSIb3DQEBCwUAA4ICAQAgeuaMzlS5dkSpZY1S
+JtfimCVuF4pyUyEAkdPF5+ICpHq1g6+W/B3W2eKHUVwV/yEnskj/fENixGxWyZlLgH6BstF8ZL8r
+7Ec5uaSw6TPl12uUnlm9b2Jo8dokfkYrQ/+JG41wLvUXEV+K7vFL5TVGiXtFKMD+Fszrycte965b
+GTmXa9HwrzRLY02TqB5VbGnCX8bHWES0J6/T0JcNFstQ1NRQzM2JjtH2FlDGbZh7V6vGSF9yCoB2
+GNmlG1aEINiNYZb7QPkJi9DPZwl2Zzuux8g3apjkP/T8OGtzk5lOS75Aq+D2EYh5XUhMiPUa0F3l
+1hyCg/LURK8WJ2Di7pxfKAOwCtMeZrqZm8fLMqEec1RXSppyAR9yIvLSq5HA36bpoBjleD8Zpe/W
+EXvxmZFu68fq36P+2bw0vKGoK+BH6Tz7nyWE2SL4j7vcPEJ/PUzTZHJlXOALBshDMuBnwlr2TFrP
+m7cfAWAi4x7kzXlMRhJ7avTe0gswJQatzK7PFgY5k49aWc+49wrF4B+pMJDm8UVlGpE3KZ37cA3S
+CfpT21xcCFDrJjNaJ7PrR4Nl5GJ1E5bQBKnDFOHVvjpCN2RPvADE9xoD1KnBNokSEXVeEwTrbF+u
+nZWztjw6A9hgP9gFeFQaGJb99NddTfkBIlHrQjmtGQRYNoTcV7TYOdNmMA==</X509Certificate></X509Data></KeyInfo></Signature></NFe><protNFe versao="4.00"><infProt><tpAmb>1</tpAmb><verAplic>SVRS2501301714DR</verAplic><chNFe>25250203995515027529550020000178901987687455</chNFe><dhRecbto>2025-02-12T15:57:26-03:00</dhRecbto><nProt>225250009866193</nProt><digVal>+WZR7ijL45m2RJ9Rc3laePpQzWU=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>
