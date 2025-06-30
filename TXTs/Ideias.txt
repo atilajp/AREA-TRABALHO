@@ -1,5 +1,6 @@
 Controle de numeração do nfce no PDV. Local para registrar numeros para não contabilizar. ####Analise###
 
+################################################
 Na cotação ao abrir a sugestão de compras e imprimir o Sistema solicita o id da Cotação que nao foi carregada apartir do painel Gerando erro na impressão. Client Exemplo suframed.
 
 No importador de NFCE Quando as informações complementares estão grande da erro na importação do Nome do Vendedor. pois não acha o campo. 
@@ -16,3 +17,11 @@ Ex Erro Cliente Princesa Massas
 \\goku\clientes$\PRINCESA MASSAS\2025\06\18\18.rar  Importar NFCE do dia 02/06/2025
 	
 	
+	
+#############################################
+No Painel Financeiro contas a Pagar. Mesmo com o titulo selecionado no Contas a Pagar, o sistema informa que precisa ser selecionado um titulo para executar a baixa
+https://prnt.sc/P5TQxYKJrJmo Cliente do Caso Conexao Ferragista.
+Ao selecionar um Titulo que o numero da nota fiscal não esta Cadastrado no contas a Pagar sistema da menssagen que precisa selecionar o Titulo. 
+Erro esta na Função do Sql FN_PainelFinanceiro_Pagar onde o Filtro do numero Doc Não esta contemplando valores null.
+Função Atual: https://prnt.sc/641Hxom-QMaS
+Correção: https://prnt.sc/HcRdLF09oA7Q
