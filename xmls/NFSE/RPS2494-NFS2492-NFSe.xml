@@ -1,0 +1,95 @@
+<ConsultarNfseRpsResposta>
+  <CompNfse>
+    <Nfse>
+      <InfNfse Id="2494">
+        <Numero>2492</Numero>
+        <LinkNota>https://pousoalegre.sigiss.com.br/pousoalegre/contribuinte/nfe/nfe_ver.php?id=7918457Ehash=P6OZV2VOEnota=2492Eccm=94997</LinkNota>
+        <CodigoVerificacao>P6OZV2VO</CodigoVerificacao>
+        <DataEmissao>2025-05-06T12:28:53-03:00</DataEmissao>
+        <ValoresNfse>
+          <BaseCalculo>380.00</BaseCalculo>
+          <Aliquota>3.0000</Aliquota>
+          <ValorIss>11.40</ValorIss>
+          <ValorLiquidoNfse>380.00</ValorLiquidoNfse>
+        </ValoresNfse>
+        <PrestadorServico>
+          <RazaoSocial>VOLCANIA MG PECAS E SERVICOS LTDA</RazaoSocial>
+          <NomeFantasia>VOLCANIA MG PECAS E SERVICOS LTDA</NomeFantasia>
+          <Endereco>
+            <Endereco>R RURAL</Endereco>
+            <Numero>S/N</Numero>
+            <Complemento>ROD. FERNAO DIAS</Complemento>
+            <Bairro>RURAL</Bairro>
+            <CodigoMunicipio>3152501</CodigoMunicipio>
+            <Uf>MG</Uf>
+            <Cep>37561899</Cep>
+          </Endereco>
+          <Contato>
+            <Email>fiscal2@contabilalbema.com.br</Email>
+          </Contato>
+        </PrestadorServico>
+        <OrgaoGerador>
+          <CodigoMunicipio>3152501</CodigoMunicipio>
+          <Uf>MG</Uf>
+        </OrgaoGerador>
+        <DeclaracaoPrestacaoServico>
+          <InfDeclaracaoPrestacaoServico>
+            <Rps>
+              <IdentificacaoRps>
+                <Numero>2494</Numero>
+                <Serie>1</Serie>
+                <Tipo>1</Tipo>
+              </IdentificacaoRps>
+              <DataEmissao>2025-05-06</DataEmissao>
+              <Status>1</Status>
+            </Rps>
+            <Competencia>2025-05-06</Competencia>
+            <Servico>
+              <Valores>
+                <ValorServicos>380.00</ValorServicos>
+                <ValTotTributos>0.00</ValTotTributos>
+                <ValorIss>11.40</ValorIss>
+                <Aliquota>3.0000</Aliquota>
+                <DescontoIncondicionado>0.00</DescontoIncondicionado>
+                <DescontoCondicionado>0.00</DescontoCondicionado>
+              </Valores>
+              <IssRetido>2</IssRetido>
+              <ResponsavelRetencao>1</ResponsavelRetencao>
+              <ItemListaServico>14.01</ItemListaServico>
+              <CodigoCnae>4520001</CodigoCnae>
+              <Discriminacao>Veiculo: VOLVO FH 460 Placa: FEC0D41 - subst peca Qtd.: 1 Valor Unit.: R$380,00;</Discriminacao>
+              <CodigoMunicipio>3152501</CodigoMunicipio>
+              <ExigibilidadeISS>1</ExigibilidadeISS>
+              <MunicipioIncidencia>3152501</MunicipioIncidencia>
+            </Servico>
+            <Prestador>
+              <CpfCnpj>
+                <Cnpj>43734344000137</Cnpj>
+              </CpfCnpj>
+              <InscricaoMunicipal>94997</InscricaoMunicipal>
+            </Prestador>
+            <TomadorServico>
+              <IdentificacaoTomador>
+                <CpfCnpj>
+                  <Cpf>05857523621</Cpf>
+                </CpfCnpj>
+              </IdentificacaoTomador>
+              <RazaoSocial>ALEX SOUZA BARBOSA</RazaoSocial>
+              <Endereco>
+                <Endereco>r GENERAL OZORIO</Endereco>
+                <Numero>500</Numero>
+                <Complemento>CENTRO</Complemento>
+                <Bairro></Bairro>
+                <CodigoMunicipio>3110509</CodigoMunicipio>
+                <Uf>MG</Uf>
+                <Cep>37650000</Cep>
+              </Endereco>
+            </TomadorServico>
+            <OptanteSimplesNacional>2</OptanteSimplesNacional>
+            <IncentivoFiscal>2</IncentivoFiscal>
+          </InfDeclaracaoPrestacaoServico>
+        </DeclaracaoPrestacaoServico>
+      </InfNfse>
+    </Nfse>
+  </CompNfse>
+</ConsultarNfseRpsResposta>
