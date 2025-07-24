@@ -1,0 +1,245 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe25250605301431000101550030012450101241638410" versao="4.00">
+      <ide>
+        <cUF>25</cUF>
+        <cNF>24163841</cNF>
+        <natOp>VENDA DE MERC. ADQUIRIDA OU RECEBIDA DE TERCEIROS</natOp>
+        <mod>55</mod>
+        <serie>3</serie>
+        <nNF>1245010</nNF>
+        <dhEmi>2025-06-17T22:32:00-03:00</dhEmi>
+        <dhSaiEnt>2025-06-17T22:32:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>2507507</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>0</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>3</indPres>
+        <indIntermed>0</indIntermed>
+        <procEmi>0</procEmi>
+        <verProc>2.3.003.046</verProc>
+      </ide>
+      <emit>
+        <CNPJ>05301431000101</CNPJ>
+        <xNome>DISTRIBUIDORA DE MEDICAMENTOS BRASIL LTDA</xNome>
+        <xFant>DISTRIBUIDORA BRASIL</xFant>
+        <enderEmit>
+          <xLgr>AV PARQUE</xLgr>
+          <nro>240</nro>
+          <xBairro>DISTRITO INDUSTRIAL</xBairro>
+          <cMun>2507507</cMun>
+          <xMun>JOAO PESSOA</xMun>
+          <UF>PB</UF>
+          <CEP>58082030</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8340092200</fone>
+        </enderEmit>
+        <IE>161373895</IE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>03246587000101</CNPJ>
+        <xNome>SUFRAMED COMERCIO DE MATERIAL MEDICO HOSPITALAR LTDA</xNome>
+        <enderDest>
+          <xLgr>AVENIDA ALMEIDA BARRETO</xLgr>
+          <nro>245</nro>
+          <xBairro>CENTRO</xBairro>
+          <cMun>2507507</cMun>
+          <xMun>JOAO PESSOA</xMun>
+          <UF>PB</UF>
+          <CEP>58013460</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8332228314</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>161248659</IE>
+        <email>suframed.financeiro@hotmail.com</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>39926</cProd>
+          <cEAN>7896230304574</cEAN>
+          <xProd>SORO FISIOL GARRAFA C/TAMPA 500 ML ADV</xProd>
+          <NCM>33079000</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>480.0000</qCom>
+          <vUnCom>3.3900000000</vUnCom>
+          <vProd>1627.20</vProd>
+          <cEANTrib>7896230304574</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>480.0000</qTrib>
+          <vUnTrib>3.3900000000</vUnTrib>
+          <vOutro>7.47</vOutro>
+          <indTot>1</indTot>
+          <xPed>5249004966</xPed>
+          <nItemPed>1</nItemPed>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>1634.67</vBC>
+              <pICMS>20.0000</pICMS>
+              <vICMS>326.93</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>0.00</vBC>
+              <pIPI>0.0000</pIPI>
+              <vIPI>0.00</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISNT>
+              <CST>04</CST>
+            </PISNT>
+          </PIS>
+          <COFINS>
+            <COFINSNT>
+              <CST>04</CST>
+            </COFINSNT>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>1634.67</vBC>
+          <vICMS>326.93</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vFCPST>0.00</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <qBCMono>0.00</qBCMono>
+          <vICMSMono>0.00</vICMSMono>
+          <qBCMonoReten>0.00</qBCMonoReten>
+          <vICMSMonoReten>0.00</vICMSMonoReten>
+          <qBCMonoRet>0.00</qBCMonoRet>
+          <vICMSMonoRet>0.00</vICMSMonoRet>
+          <vProd>1627.20</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vOutro>7.47</vOutro>
+          <vNF>1634.67</vNF>
+          <vTotTrib>0.00</vTotTrib>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>0</modFrete>
+        <transporta>
+          <CNPJ>11507592000159</CNPJ>
+          <xNome>JR TRANSPORTADORA E LOGISTICA LTDA</xNome>
+          <IE>161690254</IE>
+          <xEnder>RUA ARQUITETO RENATO AZEVEDO, 135 - TRES IRMAS</xEnder>
+          <xMun>CAMPINA GRANDE</xMun>
+          <UF>PB</UF>
+        </transporta>
+        <veicTransp>
+          <placa>PCX0302</placa>
+          <UF>PB</UF>
+        </veicTransp>
+        <vol>
+          <qVol>24</qVol>
+          <nVol>24</nVol>
+          <pesoL>259.200</pesoL>
+          <pesoB>259.680</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>1245010</nFat>
+          <vOrig>1634.67</vOrig>
+          <vDesc>0</vDesc>
+          <vLiq>1634.67</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2025-07-15</dVenc>
+          <vDup>544.89</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2025-07-22</dVenc>
+          <vDup>544.89</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2025-07-29</dVenc>
+          <vDup>544.89</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <indPag>1</indPag>
+          <tPag>15</tPag>
+          <vPag>1634.67</vPag>
+          <card>
+            <tpIntegra>2</tpIntegra>
+            <tBand>99</tBand>
+          </card>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infCpl>CLIENTE.: 54411 - SUFRAMED//(+) POSITIVO, (-) NEGATIVO, (N) NEUTRO, (O) OUTRAS//PEDIDO FILIAL:5249004966//NUMERO TRANSACAO: 1891470//TODOS OS PRODUTOS COM DENOMINACAO-EMBALAGEM HOSPITALAR, REGULAMENTADOS ATRAVES DA RDC N333 DE 11/2003, NAO PODERAO SER COMERCIALIZADOS NO BALCAO DA FARMACIA.//008 - BOLETO ITAU DIST. BRASIL COM O PRAZO DE: 28/35/42 DIAS PEDIDO: 5249004966 RCA: 5249 ELESANDRA DA SILVA SANTOS//ORIGEMPED: T//TIPOFV:</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>07577599000501</CNPJ>
+        <xContato>TOTVS BRASILIA SOFTWARE - UNIDADE GOIANIA LTDA</xContato>
+        <email>resp_tecnico_dfe_winthor@totvs.com.br</email>
+        <fone>06232500200</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe25250605301431000101550030012450101241638410">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>oyr7S3Ove9ZMQ6pvCaYlobWFkPU=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>c1oU84C1EdHHkqux0El5t5z7TQVu177BzipPUZqma6HpZ9wgycArKiVjUwfzaqyMm5IRE5prsLtah9Q3CvF2zo2pD5RQnQGrR0RoXf/3+RogPxNGtokXB+tUiNkmZ3PBbt+NyHaF/YKMwPRDG6zaIYCxhRZjFvcyUZ9LOylJ0WKuUoVsI8CtYCe5sFKyH/0c3au9A5rnEvQAb/JVhiM/YgieXu4Wu++yvnQHdPiNbRl0Qf3b0ONnqf+iJtS0w0vvZt0b+FUwglJq0MlsuCVrVMNcClfNZJGOMD4B0vSW5P+mNL/+cQNVWdBnDFy4TOw0UCgA5vw78AFFPFT64abIVg==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>MIIICjCCBfKgAwIBAgIKJ3/Ltnjp9aVKJzANBgkqhkiG9w0BAQsFADBbMQswCQYDVQQGEwJCUjEWMBQGA1UECwwNQUMgU3luZ3VsYXJJRDETMBEGA1UECgwKSUNQLUJyYXNpbDEfMB0GA1UEAwwWQUMgU3luZ3VsYXJJRCBNdWx0aXBsYTAeFw0yNTAxMjAxOTA4NTlaFw0yNjAxMjAxOTA4NTlaMIHhMQswCQYDVQQGEwJCUjETMBEGA1UECgwKSUNQLUJyYXNpbDEcMBoGA1UECwwTQ0VSVElGSUNBRE8gRElHSVRBTDEiMCAGA1UECwwZQ2VydGlmaWNhZG8gRGlnaXRhbCBQSiBBMTEXMBUGA1UECwwONDU2MTYzMDkwMDAxNDkxHzAdBgNVBAsMFkFDIFN5bmd1bGFySUQgTXVsdGlwbGExQTA/BgNVBAMMOERJU1RSSUJVSURPUkEgREUgTUVESUNBTUVOVE9TIEJSQVNJTCBMVERBOjA1MzAxNDMxMDAwMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtKnG4xxWqlSrnevfbHOCKB6HfvrzuiLuYQ7/h6bk7PFuyJUGlUf+W/gChqNznPv+wThiH9vWGvFSM9TbhIXD90aIiq5Os5wkOlihMg5rVJI1fN+VVTZuePQudSclWqQNewaAK4kAdCcrEU/XyrIs4G0osmAlG6F0iEfwmNTEYRX7xmmhjvsQzO6Pu0fjmIBTZLMeRjqo0nrytIXwTqL8vtBX37oF0T3cELeP8wIBWfV8sp/jHHiMBjR+10Ka77NwwPz563FyVICIQ2FbkLN5Dauhhzy5HmC1Ta544Kdq7QZqJgN1XCTOYeFuxaFIp4ni0+BRLigH9f1vSV/PKEEb7QIDAQABo4IDRzCCA0MwDgYDVR0PAQH/BAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMEBggrBgEFBQcDAjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJPh/34d5fXkTeE5YoshaZXmr3IWMB0GA1UdDgQWBBSdhHUzrnT8Oy65vXsZwFg/Y6f4zjB/BggrBgEFBQcBAQRzMHEwbwYIKwYBBQUHMAKGY2h0dHA6Ly9zeW5ndWxhcmlkLmNvbS5ici9yZXBvc2l0b3Jpby9hYy1zeW5ndWxhcmlkLW11bHRpcGxhL2NlcnRpZmljYWRvcy9hYy1zeW5ndWxhcmlkLW11bHRpcGxhLnA3YjCBggYDVR0gBHsweTB3BgdgTAECAYEFMGwwagYIKwYBBQUHAgEWXmh0dHA6Ly9zeW5ndWxhcmlkLmNvbS5ici9yZXBvc2l0b3Jpby9hYy1zeW5ndWxhcmlkLW11bHRpcGxhL2RwYy9kcGMtYWMtc3luZ3VsYXJJRC1tdWx0aXBsYS5wZGYwgdsGA1UdEQSB0zCB0KA0BgVgTAEDAqArBClESVNUUklCVUlET1JBIERFIE1FRElDQU1FTlRPUyBCUkFTSUwgTFREQaAZBgVgTAEDA6AQBA4wNTMwMTQzMTAwMDEwMaBCBgVgTAEDBKA5BDcyMzEwMTk5NDEwNzA1MTIxNDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwoBcGBWBMAQMHoA4EDDAwMDAwMDAwMDAwMIEgdmFuaWxzb25AYnJhc2lsZGlzdHJpYnVpZG9yYS5jb20wgeIGA1UdHwSB2jCB1zBvoG2ga4ZpaHR0cDovL2ljcC1icmFzaWwuc3luZ3VsYXJpZC5jb20uYnIvcmVwb3NpdG9yaW8vYWMtc3luZ3VsYXJpZC1tdWx0aXBsYS9sY3IvbGNyLWFjLXN5bmd1bGFyaWQtbXVsdGlwbGEuY3JsMGSgYqBghl5odHRwOi8vc3luZ3VsYXJpZC5jb20uYnIvcmVwb3NpdG9yaW8vYWMtc3luZ3VsYXJpZC1tdWx0aXBsYS9sY3IvbGNyLWFjLXN5bmd1bGFyaWQtbXVsdGlwbGEuY3JsMA0GCSqGSIb3DQEBCwUAA4ICAQAW9Bhm99EJ9sUH7MCcFVQeeug25CjZyXC7J3EBON1NdmWe73B3V0ba2lyJz5Id+0aBCVt61127u2lUBw1J/RCVezrliLlAugGurQSCyydMZlcQBFwcDselLkH/244zVsDgCM4ieR8UszEiK658NgMmBggVrEZiJaGZ53+dDNEgFSrAd05xvoubTcPuavPImWxksLva2+2NKpGZooG0hETvNxJHuZPQvG8sJt1Vu+UOjX0BGEA2Az6R4VFWOBhhWu4/pwI0kx47exbzc2o3jyo4LrdOuL72ZyJgkd5UBRYrS6UxVJzD/dEd8wPK7kwPt9/t2FFt9VyBDpWhTe/hfQK4uPXbpFneFG1KxH9icNSjbShtXXTwhXOEkHI14blIq/Jq37jhUnMWy0Sc7CgVVkmV2gj8SzorHolSjmZ0sYuQVzamrNkXT6nURGfYP/Bfs3RJb2ljIkJ4N1w2okWJyZvKrtVIKAarDRxakbPGn3tOBSVMi5mOPfQx0iio1SEGSblDy9ZQh9sESj5vts64u7OjPfCXqWOyKGq0VbMpWOvd+CYfsfRRLJzgAOrb+lSy0xnbmHu+VT0TgbeErO9qk9GiVrn4x3CxDBf87y6gYLUmmDHDY10eGg+9Tvjt+kSKoutB0oxp9DhlTauRsCXDVsb6Zj5hQbzxI2QxwVDr8+h+xQ==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS2506161036DR</verAplic>
+      <chNFe>25250605301431000101550030012450101241638410</chNFe>
+      <dhRecbto>2025-06-17T22:33:02-03:00</dhRecbto>
+      <nProt>225250036226455</nProt>
+      <digVal>oyr7S3Ove9ZMQ6pvCaYlobWFkPU=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

@@ -1,0 +1,314 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe25240405301431000101550030010923221228781392" versao="4.00">
+      <ide>
+        <cUF>25</cUF>
+        <cNF>22878139</cNF>
+        <natOp>VENDA DE MERC. ADQUIRIDA OU RECEBIDA DE TERCEIROS</natOp>
+        <mod>55</mod>
+        <serie>3</serie>
+        <nNF>1092322</nNF>
+        <dhEmi>2024-04-11T13:52:00-03:00</dhEmi>
+        <dhSaiEnt>2024-04-11T13:52:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>2507507</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>2</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>3</indPres>
+        <indIntermed>0</indIntermed>
+        <procEmi>0</procEmi>
+        <verProc>1.3.229.021</verProc>
+      </ide>
+      <emit>
+        <CNPJ>05301431000101</CNPJ>
+        <xNome>DISTRIBUIDORA DE MEDICAMENTOS BRASIL LTDA</xNome>
+        <xFant>DISTRIBUIDORA BRASIL</xFant>
+        <enderEmit>
+          <xLgr>AV PARQUE</xLgr>
+          <nro>240</nro>
+          <xBairro>DISTRITO INDUSTRIAL</xBairro>
+          <cMun>2507507</cMun>
+          <xMun>JOAO PESSOA</xMun>
+          <UF>PB</UF>
+          <CEP>58082030</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8340092200</fone>
+        </enderEmit>
+        <IE>161373895</IE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>03246587000101</CNPJ>
+        <xNome>SUFRAMED COMERCIO DE MATERIAL MEDICO HOSPITALAR LTDA</xNome>
+        <enderDest>
+          <xLgr>AVENIDA ALMEIDA BARRETO</xLgr>
+          <nro>245</nro>
+          <xBairro>CENTRO</xBairro>
+          <cMun>2507507</cMun>
+          <xMun>JOAO PESSOA</xMun>
+          <UF>PB</UF>
+          <CEP>58013460</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>8332228314</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>161248659</IE>
+        <email>suframed.financeiro@hotmail.com</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>206432</cProd>
+          <cEAN>7896902212190</cEAN>
+          <xProd>SORO FISIO GARRAFA C/TAMP SORIMAX 500ML</xProd>
+          <NCM>33079000</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>72.0000</qCom>
+          <vUnCom>3.2900000000</vUnCom>
+          <vProd>236.88</vProd>
+          <cEANTrib>7896902212190</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>72.0000</qTrib>
+          <vUnTrib>3.2900000000</vUnTrib>
+          <indTot>1</indTot>
+          <xPed>5235001024</xPed>
+          <nItemPed>3</nItemPed>
+          <rastro>
+            <nLote>0000010087</nLote>
+            <qLote>72.000</qLote>
+            <dFab>2024-02-17</dFab>
+            <dVal>2026-02-28</dVal>
+          </rastro>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>236.88</vBC>
+              <pICMS>20.0000</pICMS>
+              <vICMS>47.38</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>0.00</vBC>
+              <pIPI>0.0000</pIPI>
+              <vIPI>0.00</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISNT>
+              <CST>04</CST>
+            </PISNT>
+          </PIS>
+          <COFINS>
+            <COFINSNT>
+              <CST>04</CST>
+            </COFINSNT>
+          </COFINS>
+        </imposto>
+        <infAdProd>N LT. 0000010087 DATA FAB.: 17/02/2024 DATA VAL.: 28/02/2026 PERC.PARC.FCI: 0 - N. FCI: A5267028-0FA9-4753-829E-7109EED8C482</infAdProd>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>206432</cProd>
+          <cEAN>7896902212190</cEAN>
+          <xProd>SORO FISIO GARRAFA C/TAMP SORIMAX 500ML</xProd>
+          <NCM>33079000</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>48.0000</qCom>
+          <vUnCom>3.2900000000</vUnCom>
+          <vProd>157.92</vProd>
+          <cEANTrib>7896902212190</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>48.0000</qTrib>
+          <vUnTrib>3.2900000000</vUnTrib>
+          <indTot>1</indTot>
+          <xPed>5235001024</xPed>
+          <nItemPed>4</nItemPed>
+          <rastro>
+            <nLote>0000010090</nLote>
+            <qLote>48.000</qLote>
+            <dFab>2024-02-17</dFab>
+            <dVal>2026-02-28</dVal>
+          </rastro>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>157.92</vBC>
+              <pICMS>20.0000</pICMS>
+              <vICMS>31.58</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>0.00</vBC>
+              <pIPI>0.0000</pIPI>
+              <vIPI>0.00</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISNT>
+              <CST>04</CST>
+            </PISNT>
+          </PIS>
+          <COFINS>
+            <COFINSNT>
+              <CST>04</CST>
+            </COFINSNT>
+          </COFINS>
+        </imposto>
+        <infAdProd>N LT. 0000010090 DATA FAB.: 17/02/2024 DATA VAL.: 28/02/2026 PERC.PARC.FCI: 0 - N. FCI: A5267028-0FA9-4753-829E-7109EED8C482</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>394.80</vBC>
+          <vICMS>78.96</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vFCPST>0.00</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>394.80</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>394.80</vNF>
+          <vTotTrib>0.00</vTotTrib>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>0</modFrete>
+        <transporta>
+          <CNPJ>17334801000196</CNPJ>
+          <xNome>GIORGI PEREIRA DA COSTA ME</xNome>
+          <xEnder>AV DEPUTADO RAIMNDO ASFORA, 2880 - VELAME</xEnder>
+          <xMun>CAMPINA GRANDE</xMun>
+          <UF>PB</UF>
+        </transporta>
+        <veicTransp>
+          <placa>PGY0H50</placa>
+          <UF>PB</UF>
+        </veicTransp>
+        <vol>
+          <qVol>5</qVol>
+          <nVol>5</nVol>
+          <pesoL>64.800</pesoL>
+          <pesoB>64.920</pesoB>
+        </vol>
+      </transp>
+      <pag>
+        <detPag>
+          <indPag>1</indPag>
+          <tPag>14</tPag>
+          <vPag>394.80</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infCpl>CLIENTE.: 54411 - SUFRAMED//(+) POSITIVO, (-) NEGATIVO, (N) NEUTRO, (O) OUTRAS//PEDIDO FILIAL:5235001024//NUMERO TRANSACAO: 1575303//TODOS OS PRODUTOS COM DENOMINACAO-EMBALAGEM HOSPITALAR, REGULAMENTADOS ATRAVES DA RDC N333 DE 11/2003, NAO PODERAO SER COMERCIALIZADOS NO BALCAO DA FARMACIA.//C - DUPLICATA EM CARTEIRA COM O PRAZO DE: A VISTA PEDIDO: 5235001024 RCA: 5235 VI F1PB SAMARA DA SILVA SOUSA</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>07577599000501</CNPJ>
+        <xContato>TOTVS BRASILIA SOFTWARE - UNIDADE GOIANIA LTDA</xContato>
+        <email>resp_tecnico_dfe_winthor@totvs.com.br</email>
+        <fone>06232500200</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe25240405301431000101550030010923221228781392">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>LWsYZVp6mJQtOnsZHlYYXzKDDIs=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>Y1Bx2nlL2L6d79u279d0uCcbJPhfXCBdyf6EQbqKwTL49Dch3kw2gujn4iJ3Eiw3eSQuAhxdlRyr
+ZoYqcqTfgWBbukLL5uX9TaR5vb+XWIAB+Mhy9W716xSb8Afuxzh5ZxIKwaezjUUx2TAQ7gEoRgfk
+1Zvyexo7FVVJVJkdRGrxq+wAmaWuBxgoC//1MTiPHQGpmbLJ/N3WmkmPFdgAtcplFRXvb9GSVjdH
+eX6aZQHcxt6C0oQpzfCgCTH3JY96jho8agm7oykSzMtHpdgoNrscEhg9BfK8vcAt4saWewNiXZrO
+CEvMV3riyt0ZZ23Aar3daIs95LZlGcYZAAfUkw==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>MIIH4zCCBcugAwIBAgIIWTEjBxdhTowwDQYJKoZIhvcNAQELBQAwcTELMAkGA1UEBhMCQlIxEzAR
+BgNVBAoTCklDUC1CcmFzaWwxGDAWBgNVBAsTD0FDIFNPTFVUSSB2NSBHMjEzMDEGA1UEAxMqQUMg
+Q0NOIENPTVBBTkhJQSBDRVJUSUZJQ0FET1JBIE5BQ0lPTkFMIHY1MB4XDTIzMDcxNzE4NTcwMFoX
+DTI0MDcxNjE4NTcwMFowggEQMQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDELMAkG
+A1UECBMCUEIxFDASBgNVBAcTC0pvYW8gUGVzc29hMTMwMQYDVQQLEypBQyBDQ04gQ09NUEFOSElB
+IENFUlRJRklDQURPUkEgTkFDSU9OQUwgdjUxFzAVBgNVBAsTDjIwNzgxNzEwMDAwMTAzMRwwGgYD
+VQQLExNDZXJ0aWZpY2FkbyBEaWdpdGFsMRowGAYDVQQLExFDZXJ0aWZpY2FkbyBQSiBBMTFBMD8G
+A1UEAxM4RElTVFJJQlVJRE9SQSBERSBNRURJQ0FNRU5UT1MgQlJBU0lMIExUREE6MDUzMDE0MzEw
+MDAxMDEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCsjD+dyjasorkIK2ZyoSwPU7bv
+UrXoBMpjRJLJbuEDh3CC/BvhZmRvKe3VFgy9SYfRVhuvsNLupelZvCnLgMGyy7vseiW4evuP8TVG
+yh5KEC/83Ss3afpY8PeYu2VtaVXYcJNs7PH4txQFs5yQR1ACvMUPbzyeexWavtXmP1GCp16DJ+ny
+/A1DWJ+h856q+Vx0txD4VDAxq3xjtNZAF9tvbJuZV9FtyRCfWEodQMmTl+L2pbKl8DkHCACQfjxF
+YJpgRXhnoyX+koQbN2SFW+HUvCMYUHeIPwio4/B6To28NUyDbeUtiFMZ3owz56+aprNKe57HH0My
+ZWHTULME+leJAgMBAAGjggLcMIIC2DAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFFpnrogTBkPGK9fn
+n8zKwNdTT0rAMHAGCCsGAQUFBwEBBGQwYjBgBggrBgEFBQcwAoZUaHR0cDovL2NjZC5hY2NjbmNl
+cnRpZmljYWRvcmEuY29tLmJyL2xjci9hYy1jY25jb21wYW5oaWFjZXJ0aWZpY2Fkb3JhbmFjaW9u
+YWwtdjUucDdiMIG1BgNVHREEga0wgaqBGWNvbnRhYmlsQGdydXBvYnJmMS5jb20uYnKgHwYFYEwB
+AwKgFhMUQ0FNSUxBIENPU1RBIEdBTElORE+gGQYFYEwBAwOgEBMOMDUzMDE0MzEwMDAxMDGgOAYF
+YEwBAwSgLxMtMjMxMDE5OTQxMDcwNTEyMTQxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwoBcG
+BWBMAQMHoA4TDDAwMDAwMDAwMDAwMDBrBgNVHSAEZDBiMGAGB2BMAQIBgRAwVTBTBggrBgEFBQcC
+ARZHaHR0cDovL2NjZC5hY2NjbmNlcnRpZmljYWRvcmEuY29tLmJyL2RvY3MvZHBjLWFjLWFjY2Nu
+Y2VydGlmaWNhZG9yYS5wZGYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIHEBgNVHR8E
+gbwwgbkwWqBYoFaGVGh0dHA6Ly9jY2QuYWNjY25jZXJ0aWZpY2Fkb3JhLmNvbS5ici9sY3IvYWMt
+Y2NuY29tcGFuaGlhY2VydGlmaWNhZG9yYW5hY2lvbmFsLXY1LmNybDBboFmgV4ZVaHR0cDovL2Nj
+ZDIuYWNjY25jZXJ0aWZpY2Fkb3JhLmNvbS5ici9sY3IvYWMtY2NuY29tcGFuaGlhY2VydGlmaWNh
+ZG9yYW5hY2lvbmFsLXY1LmNybDAdBgNVHQ4EFgQUUzgRTr0qzIwxi0N8PIpPVKYV9W4wDgYDVR0P
+AQH/BAQDAgXgMA0GCSqGSIb3DQEBCwUAA4ICAQBYKNGb7t/xZYCScNNOsOnCcevOzAUZu6jfn+JQ
+wDOdekWlUNm/bZeuNPl3elMQa92MOFAWXI6LUgj1onf5ZyT9xoeIWxG4X82Orh3B1Pau4SKcIiGG
+THD+p4hpGUZ4QUKNjeQ7+XCBcuZzjMHwEKfBrcs6p6ooZN35eordKhdjdhVQ8bRVLOM4LWK36DsN
+QUhMB44AtCw1IXaoUC8eyDFsL+Pv+AaLepw6ljDDml+0KcX7jAVTKXN+Mdq6tT6elYgo2Px7bAeN
+g6+vFAcwUElXdWR9j/r/xDd8M+80ZBezqIh3240OGf99kP+u+bG22LzB0kujLfc+EQYWoOH0cVOF
+dDX0LoUurBZ7qISdjW15Jemyj6IWBggAt1SJpqDTrbfmUk/hcZw/LttpgGbDlahoHk0muTPd4r2D
+1strDqbBamI4r3Re4QKKlE2chklMKP+aFEoDBa77Q/MBkItCBfwR25uOa13woBpg0T7WimE3A/zL
+3Uk2p61lu3+b7ElA6EGGMUSy/D1N503b1GDeFXkyf4ZTdnNYXkcvRaPwfXobK0vuZzTJtkD4UF34
+mGwUuYCsRFH16MrZ/Q+xInbNVaivLQPrnJKQWxsLoyCltI7lij4OWyTpERkoKl0LnRlZX6to481t
+gXmNPRpejOF6T/bZRvOAPKn3GyR4xksFejwEWg==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202404091040</verAplic>
+      <chNFe>25240405301431000101550030010923221228781392</chNFe>
+      <dhRecbto>2024-04-11T13:52:23-03:00</dhRecbto>
+      <nProt>325240013976020</nProt>
+      <digVal>LWsYZVp6mJQtOnsZHlYYXzKDDIs=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

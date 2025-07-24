@@ -1,8 +1,6 @@
 Controle de numeração do nfce no PDV. Local para registrar numeros para não contabilizar. ####Analise###
 
 ################################################
-Na cotação ao abrir a sugestão de compras e imprimir o Sistema solicita o id da Cotação que nao foi carregada apartir do painel Gerando erro na impressão. Client Exemplo suframed.
-
 No importador de NFCE Quando as informações complementares estão grande da erro na importação do Nome do Vendedor. pois não acha o campo. 
 Adicionar tratamento no importador para pesquisar se existe o texto e sair da função evitando o erro. 
 
@@ -25,3 +23,8 @@ Ao selecionar um Titulo que o numero da nota fiscal não esta Cadastrado no cont
 Erro esta na Função do Sql FN_PainelFinanceiro_Pagar onde o Filtro do numero Doc Não esta contemplando valores null.
 Função Atual: https://prnt.sc/641Hxom-QMaS
 Correção: https://prnt.sc/HcRdLF09oA7Q
+
+
+#############################################
+Corrigir Logica do Usar Balança na Venda.
+Por Padrão o form Vendas3 deve esta com os objetos da Balança   txtCodBarras imgAjuda_CodigodeBarrasdaBalanca lblPesquisa Visives e o subformulário vendas2 com tamanho reduzido para funcionar como esperado a ativação ou não no Cadastro de Empresa.

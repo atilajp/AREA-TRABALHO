@@ -292,3 +292,11 @@ With CurrentProject.Connection
 	.Execute StrSql, , adCmdText + adExecuteNoRecords
 	idItem = .Execute("SELECT @@IDENTITY")(0)
 End With
+
+
+
+=ImpressoesModelos_OpenForm("Cargas")
+
+=Util_OpenForm("Ajustes_EstoqueRapido")
+
+=RequeryControleComFoco()
