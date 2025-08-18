@@ -300,3 +300,24 @@ End With
 =Util_OpenForm("Ajustes_EstoqueRapido")
 
 =RequeryControleComFoco()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
