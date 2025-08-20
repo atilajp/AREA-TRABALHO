@@ -1,30 +1,12 @@
 Controle de numeração do nfce no PDV. Local para registrar numeros para não contabilizar. ####Analise###
 
 ################################################
-No importador de NFCE Quando as informações complementares estão grande da erro na importação do Nome do Vendedor. pois não acha o campo. 
-Adicionar tratamento no importador para pesquisar se existe o texto e sair da função evitando o erro. 
+Pesquisa Preço. Ordenhação da pesquisa avançada. 
+Na função getWhere_Pesquisas() do Formulario PesquisaPreco_Avancada
+Adicionar a Ordenação da Configuração do painel.
 
-     'Testar se existe a palavra "VENDEDOR" no infCpl
-    If InStr(1, infCpl, "VENDEDOR", vbTextCompare) = 0 Then
-        'Se não existir, devolve 0 e sai
-        NFCe_getVendedorID = getUsuarioLogadoID
-        Exit Function
-    End If
+Exemplo de Solução :
+Adicionar no final do codigo.
 
-Ex Erro Cliente Princesa Massas 
-\\goku\clientes$\PRINCESA MASSAS\2025\06\18\18.rar  Importar NFCE do dia 02/06/2025
-	
-	
-	
-#############################################
-No Painel Financeiro contas a Pagar. Mesmo com o titulo selecionado no Contas a Pagar, o sistema informa que precisa ser selecionado um titulo para executar a baixa
-https://prnt.sc/P5TQxYKJrJmo Cliente do Caso Conexao Ferragista.
-Ao selecionar um Titulo que o numero da nota fiscal não esta Cadastrado no contas a Pagar sistema da menssagen que precisa selecionar o Titulo. 
-Erro esta na Função do Sql FN_PainelFinanceiro_Pagar onde o Filtro do numero Doc Não esta contemplando valores null.
-Função Atual: https://prnt.sc/641Hxom-QMaS
-Correção: https://prnt.sc/HcRdLF09oA7Q
+ getWhere_Pesquisas = getWhere_Pesquisas & " ORDER BY [" & PesquisaPreco_getOrdem & "] ASC" 
 
-
-#############################################
-Corrigir Logica do Usar Balança na Venda.
-Por Padrão o form Vendas3 deve esta com os objetos da Balança   txtCodBarras imgAjuda_CodigodeBarrasdaBalanca lblPesquisa Visives e o subformulário vendas2 com tamanho reduzido para funcionar como esperado a ativação ou não no Cadastro de Empresa.
