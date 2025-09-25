@@ -16,7 +16,7 @@ Loop
 	With CurrentDb.QueryDefs("")
 
 		.Parameters.Item("@Cod").value = Cod
-		.Execute
+		.Execute dbSeeChanges
 			
 	End With
 #############################################
@@ -293,6 +293,8 @@ With CurrentProject.Connection
 	idItem = .Execute("SELECT @@IDENTITY")(0)
 End With
 
+
+Relatorios_VendasFormaPagamento_IsLinkPagamento
 
 
 =ImpressoesModelos_OpenForm("Cargas")

@@ -4,6 +4,7 @@ fora do estado 7015ddd numero
 2741	Cliente solicita que o atendimento seja adiado para outro dia
 966		COPIA DE SISTEMA
 2775	Cliente resolveu sozinho
+1452	RETORNO AO CLIENTE
 
 
 soft#n2@atendimento
@@ -35,9 +36,6 @@ Faq Supervisor de produtos 6229
 3608	"SQL: Não consegue excluir um ajuste de estoque e não apresenta nenhuma mensagem.Excluindo direto na tabela apresenta a mensagem: ""ODBC Falha na chamada.A instrução DELETE conflitou com a restrição do REFERENCE sub inventário$FK_sub_inventário_Inventário."""	
 3630	Tempo limite excedido ao organizar estoque em SQL Server (timeout)
 3789	Analise de desempenho banco SQL Server (Banco lento ou com travamento intermitente)
-
-
-
 
 
 Olá, tudo bem, aqui é Átila da Softcom, Estamos com um chamado em aberto. Gostaria de saber se tem disponibilidade para o atendimento agora.

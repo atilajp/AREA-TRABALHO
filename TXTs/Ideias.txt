@@ -1,12 +1,2 @@
-Controle de numeração do nfce no PDV. Local para registrar numeros para não contabilizar. ####Analise###
-
-################################################
-Pesquisa Preço. Ordenhação da pesquisa avançada. 
-Na função getWhere_Pesquisas() do Formulario PesquisaPreco_Avancada
-Adicionar a Ordenação da Configuração do painel.
-
-Exemplo de Solução :
-Adicionar no final do codigo.
-
- getWhere_Pesquisas = getWhere_Pesquisas & " ORDER BY [" & PesquisaPreco_getOrdem & "] ASC" 
-
+Erro na Produção composição
+https://www.youtube.com/watch?v=-aRJdyyXVt4
