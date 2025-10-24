@@ -1,0 +1,32 @@
+#### Buscar play list
+m!playlist search top capital inicial
+
+
+
+####Embaralha as musicas.
+m!shuffle
+
+#### Selecionar Aleatorio
+m!select random
+
+
+####informações da fila
+m!queue information
+
+
+###Obtenha uma lista de todas as próximas faixas
+m!upcoming
+
+####Autoplay
+m!autoplay
+
+
+
+#### Musica popular brasileiora
+m!play https://open.spotify.com/playlist/6G4O7YRLjTk4T4VPa4fDAM?si=VhRUakFcR8mELBrpaMujTg
+
+
+
+
+##### Radio CaboBranco
+m!play https://servidor20.brlogic.com:7086/live

@@ -20,8 +20,7 @@ Faq Supervisor de produtos 6229
 3722	Mudança: RFC - Criaçao de Objetos (Tabelas, Consultas, Formulários, Macros e Relatórios) 1,10
 6595	Mudança: RFC - RFC Complexa
 4548	CONSULTORIA TECNICA NS3 NIVEL 3
-4558	CONSULTORIA TECNICA NS3 NIVEL 4
-6517	AUXÍLIO TÉCNICO
+4558	CONSULTORIA TECNICA NS3 NIVEL 	AUXÍLIO TÉCNICO
 
 3381	Parametrização NFCe: Parametrização do Softshop para Migração NFCe
 3676	ACCESS: Criação de Objetos (Tabelas, Consultas, Formulários, Macros e Relatórios).
@@ -50,6 +49,38 @@ Este contato não recebe mensagens após a finalização do atendimento ⚠️
 Atendimento finalizado, a Softcom agradece seu contato!
 Caso precise de suporte, entre em contato pelo Whatsapp: 0800 003 3600.
 Este contato não recebe mensagens após a finalização do atendimento ⚠️
+
+################################################################
+# cria lista de sessões parseando saída do qwinsta
+$sessions = (qwinsta) | ForEach-Object {
+    $line = $_.Trim()
+    if ($line -and -not $line.StartsWith("SESSIONNAME") -and -not $line.StartsWith("USERNAME")) {
+        $cols = $line -split '\s+'
+        # Usuário, NomeSessão, Id, Estado ...
+        [PSCustomObject]@{ Username = $cols[0]; SessionName = $cols[1]; Id = $cols[2]; State = $cols[3] }
+    }
+} | Where-Object { $_ -ne $null }
+
+# identifica id da sessão atual (marcada com '>' em qwinsta)
+$currentId = (qwinsta) | ForEach-Object {
+    if ($_ -match '^\s*>') { ($_.TrimStart() -split '\s+')[2] }
+} | Select-Object -First 1
+
+# desconecta todas exceto a sessão atual
+foreach ($s in $sessions) {
+    if ($s.Id -and ($s.Id -ne $currentId)) {
+        Write-Host "Desconectando ID $($s.Id) - $($s.Username) ..."
+        logoff $s.Id /V
+    }
+}
+################################################################
+
+
+
+
+
+
+
 
 
 

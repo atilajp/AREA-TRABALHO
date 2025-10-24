@@ -303,7 +303,7 @@ Relatorios_VendasFormaPagamento_IsLinkPagamento
 
 =RequeryControleComFoco()
 
-
+=Util_Report_Open("Relatorios_VendasPeriodo")
 
 
 
