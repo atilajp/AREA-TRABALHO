@@ -30,3 +30,9 @@ m!play https://open.spotify.com/playlist/6G4O7YRLjTk4T4VPa4fDAM?si=VhRUakFcR8mEL
 
 ##### Radio CaboBranco
 m!play https://servidor20.brlogic.com:7086/live
+
+##### Radio Correio
+m!play  https://shout25.crossradio.com.br:18066/live
+
+##### MIXFM_JOAOPESSOA
+m!play https://27613.live.streamtheworld.com/MIXFM_JOAOPESSOA.mp3

@@ -20,7 +20,8 @@ Faq Supervisor de produtos 6229
 3722	Mudança: RFC - Criaçao de Objetos (Tabelas, Consultas, Formulários, Macros e Relatórios) 1,10
 6595	Mudança: RFC - RFC Complexa
 4548	CONSULTORIA TECNICA NS3 NIVEL 3
-4558	CONSULTORIA TECNICA NS3 NIVEL 	AUXÍLIO TÉCNICO
+4558	CONSULTORIA TECNICA NS3 NIVEL 4
+6517	AUXÍLIO TÉCNICO	
 
 3381	Parametrização NFCe: Parametrização do Softshop para Migração NFCe
 3676	ACCESS: Criação de Objetos (Tabelas, Consultas, Formulários, Macros e Relatórios).
@@ -45,10 +46,16 @@ Atendimento finalizado por falta de interação.
 Caso precise de suporte, entre em contato pelo Whatsapp: 0800 003 3600.
 Este contato não recebe mensagens após a finalização do atendimento ⚠️
 
+Percebi que você não está disponível no momento.
+Dessa forma, pedimos que entre em contato conosco pelo 0800 003 3600, por ligação ou WhatsApp, quando for mais conveniente.
+A Softcom agradece pela preferência e pelo uso de nossos serviços.
+Este contato não recebe mensagens após a finalização do atendimento ⚠️
+
 
 Atendimento finalizado, a Softcom agradece seu contato!
 Caso precise de suporte, entre em contato pelo Whatsapp: 0800 003 3600.
 Este contato não recebe mensagens após a finalização do atendimento ⚠️
+
 
 ################################################################
 # cria lista de sessões parseando saída do qwinsta
