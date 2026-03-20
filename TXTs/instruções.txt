@@ -39,7 +39,7 @@ With CurrentDb().OpenRecordset("", dbOpenDynaset, dbSeeChanges)
 End With
 
 #############################################
-at	
+	
     For i = 0 To 6
         ' Faça alguma coisa dentro do loop
         Debug.Print "Valor de i: " & i
@@ -91,7 +91,7 @@ If ((GetKeyState(vbKeyBack) And &H8000) = &H8000) Or ((GetKeyState(vbKeyDown) An
 	Exit Function
 End If
 
-
+###############################################
 
 
 Dim str_Cabecalho As String
@@ -107,7 +107,7 @@ With CurrentDb
 Registro_NFE_Cabecalho = .OpenRecordset("Select @@Identity")(0)
 End With
 
-
+#################################################
 Private Sub ListarReferencias()
     
     Dim Item As Reference
@@ -127,6 +127,7 @@ Private Sub ListarReferencias()
 
 End Sub
 
+####################################################
 
 Public Function DelVinc()
 Dim tdf As TableDef
@@ -145,7 +146,7 @@ End Function
 
 
 
-
+#####################################################
 
 Sub RemoverPrefixoDBO()
     Dim db As DAO.Database
@@ -193,8 +194,10 @@ If (Util_getSenhaSupervisor <> YES_RETURN) Then
 
 End If
 
-
+###############################################
 ImpressoesModelos_OpenForm("PEDIDO")
+
+###############################################
 
 Private Sub Quantidade_BeforeUpdate(Cancel As Integer)
     Dim quantNoEstoque As Double
@@ -251,7 +254,7 @@ End Function
    
    
    
-   
+ ###############################################  
    
    Private Sub Exportar_Excel()
 Dim FS As Object
@@ -303,8 +306,10 @@ Relatorios_VendasFormaPagamento_IsLinkPagamento
 
 =RequeryControleComFoco()
 
-=Util_Report_Open("Relatorios_VendasPeriodo")
+=Util_Report_Open("ContratoComodato")
 
+
+=Util_Report_Open("Cadastro de Freezers";2;"[CodFreezer]=" & [Formulários]![Cadastro de Freezer]![CodFreezer])
 
 
 

@@ -7,6 +7,7 @@ fora do estado 7015ddd numero
 1452	RETORNO AO CLIENTE
 
 
+
 soft#n2@atendimento
 #100 RAMAL
 
@@ -21,7 +22,7 @@ Faq Supervisor de produtos 6229
 6595	Mudança: RFC - RFC Complexa
 4548	CONSULTORIA TECNICA NS3 NIVEL 3
 4558	CONSULTORIA TECNICA NS3 NIVEL 4
-6517	AUXÍLIO TÉCNICO	
+6517	AUXÍLIO TÉCNICO
 
 3381	Parametrização NFCe: Parametrização do Softshop para Migração NFCe
 3676	ACCESS: Criação de Objetos (Tabelas, Consultas, Formulários, Macros e Relatórios).
@@ -39,7 +40,8 @@ Faq Supervisor de produtos 6229
 
 
 
-Olá, tudo bem, aqui é Átila da Softcom, Estamos com um chamado em aberto. Gostaria de saber se tem disponibilidade para o atendimento agora.
+Chat iniciado! 
+Olá, tudo bem, aqui é Átila da Softcom, Estamos com um chamado em aberto. Gostaria de saber se tem disponibilidade para o atendimento agora?
 
 
 Atendimento finalizado por falta de interação.

@@ -1,0 +1,1 @@
+The database has been placed in a state by user 'Admin' on machine 'SUPN214' that prevents it from being opened or locked.

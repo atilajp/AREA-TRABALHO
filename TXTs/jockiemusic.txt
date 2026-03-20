@@ -35,4 +35,4 @@ m!play https://servidor20.brlogic.com:7086/live
 m!play  https://shout25.crossradio.com.br:18066/live
 
 ##### MIXFM_JOAOPESSOA
-m!play https://27613.live.streamtheworld.com/MIXFM_JOAOPESSOA.mp3
+m!play https://24233.live.streamtheworld.com/MIXFM_JOAOPESSOAAAC.aac
